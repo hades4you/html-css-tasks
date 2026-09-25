@@ -92,3 +92,39 @@
   border-radius: 5px;
   box-shadow: rgba(138, 138, 138, 0.2) 0px 2px 8px 0px;
 }
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  .home {
+    width: 90%;
+  }
+  .preview-container {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .home {
+    width: 90%;
+  }
+  .preview-container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home {
+    width: 100%;
+  }
+  .task {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .preview-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .page-header > h1 {
+    font-size: 28px;
+  }
+  .page {
+    padding: 30px 10px;
+  }
+}
