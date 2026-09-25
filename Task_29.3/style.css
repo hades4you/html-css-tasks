@@ -1,0 +1,109 @@
+body,div,h1,h2,h3,p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+p {
+    font-size: 18px;
+}
+body {
+    background-color: #121212;
+}
+.ticket {
+    width: 500px;
+    padding: 20px;
+    margin: 50px auto 0 auto;
+    border-radius: 20px;
+    color: #f7f7f7;
+    background-color: #333333;
+}
+.header {
+    width: 100%;
+    display: flex;
+    margin: 0 0 20px 0;
+}
+.header-left {
+    width: 70%;
+}
+.category-container {
+    margin: 10px 0 20px 0;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+}
+.category {
+    padding: 2px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #1b1b1b;
+}
+.location-container {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 5px;
+}
+.movie-poster {
+    width: 30%;
+    border-radius: 10px;
+}
+.mid-area {
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+.footer-top {
+    margin: 0 0 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.seating-details {
+}
+.seating-top {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    margin: 0 0 20px 0;
+}
+.seating-grey-text {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: #999999;
+}
+.qr-container {
+    width: 30%;
+    padding: 20px;
+}
+.qr-img {
+    width: 100%;
+}
+.footer-bottom {
+    color: #999999;
+    text-align: center;
+}
+.overall-footer {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    color: #f7f7f7;
+}
+.footer-left{
+    width: 60%;
+}
+.footer-right{
+    width: 30%;
+}
+.steam-logo {
+    width: 100%;
+}

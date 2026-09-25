@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_26.3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+        }
+        body {
+            background-color: #121212;
+        }
+        .card-container {
+            padding: 20px;
+            margin: 50px auto 0 auto;
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #282828;
+        }
+        .card {
+            width: 30%;
+            background-color: #cfcfcf;
+            padding: 30px 20px;
+        }
+        .coin-container {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            padding: 2px;
+            margin: 0 auto;
+        }
+        .coin {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+        .plan-container {
+            margin: 15px 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .card-1-line-div {
+            width: 130px;
+            height: 2px;
+        }
+        .perks {
+            width: 100%;
+        }
+        .icon {
+            text-align: right;
+        }
+        .perk,.icon {
+            padding: 10px 0;
+        }
+        .btn-container {
+            margin: 20px 0 0 0;
+            width: 100%;
+            text-align: center;
+        }
+        .purchase {
+            padding: 10px 80px;
+            border-radius: 20px;
+        }
+        .fa-circle-check {
+            color: green;
+        }
+        .fa-circle-xmark {
+            color: red;
+        }
+        .accent-1-br {
+            border: 2px solid #fb542b;
+        }
+        .accent-1-bg {
+            background-color: #fb542b;
+        }
+        .accent-1-cl {
+            color: #fb542b;
+        }
+        .accent-2-br {
+            border: 2px solid #2b80fb;
+        }
+        .accent-2-bg {
+            background-color: #2b80fb;
+        }
+        .accent-2-cl {
+            color: #2b80fb;
+        }
+        .accent-3-br {
+            border: 2px solid #972bfb;
+        }
+        .accent-3-bg {
+            background-color: #972bfb;
+        }
+        .accent-3-cl {
+            color: #972bfb;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <main class="card-container">
+        <div class="card">
+            <div class="coin-container accent-1-br">
+                <div class="coin accent-1-bg">
+                    <p class="rupee"><sup>&#8377;</sup></p><h1 class=".coin-val">00</h1>   
+                </div>
+            </div>            
+            <div class="plan-container">
+                <div class="card-1-line-div accent-1-bg"></div>
+                <h2 class="plan">Basic</h2>
+                <div class="card-1-line-div accent-1-bg"></div>
+            </div>
+            <table class="perks">
+                <tr class="tb-row">
+                    <td class="perk">One Selected Template</td>
+                    <td class="icon"><i class="fa-regular fa-circle-check"></i></td>
+                </tr>
+                <tr class="tb-row">
+                    <td class="perk">100% Responsive Design</td>
+                    <td class="icon"><i class="fa-regular fa-circle-check"></i></td>
+                </tr>
+                <tr class="tb-row">
+                    <td class="perk">Credit Remove Permission</td>
+                    <td class="icon"><i class="fa-regular fa-circle-xmark"></i></td>
+                </tr>
+                <tr class="tb-row">
+                    <td class="perk">Lifetime Template Updates</td>
+                    <td class="icon"><i class="fa-regular fa-circle-xmark"></i></td>
+                </tr>
+            </table>
+            <div class="btn-container">
+                <button class="purchase accent-1-br accent-1-cl"><b>Purchase</b></button>
+            </div>
+        </div><div class="card">
+            <div class="coin-container accent-2-br">
+                <div class="coin accent-2-bg">
+                    <p class="rupee"><sup>&#8377;</sup></p><h1 class=".coin-val">00</h1>   
+                </div>
+            </div>            
+            <div class="plan-container">
+                <div class="card-1-line-div accent-2-bg"></div>
+                <h2 class="plan">Basic</h2>
+                <div class="card-1-line-div accent-2-bg"></div>
+            </div>
+            <table class="perks">
+                <tr class="tb-row">
+                    <td class="perk">One Selected Template</td>
+                    <td class="icon"><i class="fa-regular fa-circle-check"></i></td>
+                </tr>
+                <tr class="tb-row">
+                    <td class="perk">100% Responsive Design</td>
+                    <td class="icon"><i class="fa-regular fa-circle-check"></i></td>
+                </tr>
+                <tr class="tb-row">
+                    <td class="perk">Credit Remove Permission</td>
+                    <td class="icon"><i class="fa-regular fa-circle-check"></i></td>
+                </tr>
+                <tr class="tb-row">
+                    <td class="perk">Lifetime Template Updates</td>
+                    <td class="icon"><i class="fa-regular fa-circle-xmark"></i></td>
+                </tr>
+            </table>
+            <div class="btn-container">
+                <button class="purchase accent-2-br accent-2-cl"><b>Purchase</b></button>
+            </div>
+        </div><div class="card">
+            <div class="coin-container accent-3-br">
+                <div class="coin accent-3-bg">
+                    <p class="rupee"><sup>&#8377;</sup></p><h1 class=".coin-val">00</h1>   
+                </div>
+            </div>            
+            <div class="plan-container">
+                <div class="card-1-line-div accent-3-bg"></div>
+                <h2 class="plan">Basic</h2>
+                <div class="card-1-line-div accent-3-bg"></div>
+            </div>
+            <table class="perks">
+                <tr class="tb-row">
+                    <td class="perk">One Selected Template</td>
+                    <td class="icon"><i class="fa-regular fa-circle-check"></i></td>
+                </tr>
+                <tr class="tb-row">
+                    <td class="perk">100% Responsive Design</td>
+                    <td class="icon"><i class="fa-regular fa-circle-check"></i></td>
+                </tr>
+                <tr class="tb-row">
+                    <td class="perk">Credit Remove Permission</td>
+                    <td class="icon"><i class="fa-regular fa-circle-check"></i></td>
+                </tr>
+                <tr class="tb-row">
+                    <td class="perk">Lifetime Template Updates</td>
+                    <td class="icon"><i class="fa-regular fa-circle-check"></i></td>
+                </tr>
+            </table>
+            <div class="btn-container">
+                <button class="purchase accent-3-br accent-3-cl"><b>Purchase</b></button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

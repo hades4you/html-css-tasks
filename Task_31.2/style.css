@@ -1,0 +1,108 @@
+body,main,section,aside,div,article,p,h1,h2,h3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px 100px;
+    color: white;
+    background-color: #121212;
+}
+.portrait-card {
+    width: 33%;
+    height: 100%;
+}
+.wide-cards-container {
+    width: 66%;
+    height: 100%;
+}
+.wide-cards-row {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 10px;
+}
+.top-row {
+    padding: 0 0 5px 0;
+}
+.bottom-row {
+    padding: 5px 0 0 0;
+}
+.wide-card {
+    width: 50%;
+    height: 100%;
+}
+.portrait-card {
+    background-image: url("./honda-portrait.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-bg-layer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    padding: 40px;
+    background-color: #1212128a;
+}
+.card-category-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-category-container i {
+    font-size: 12px;
+}
+.card-category-container span {
+    font-size: 10px;
+}
+.transparent-circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffffff62;
+}
+.main-text {
+    margin: 10px 0;
+}
+.card-1 .card-bg-layer {
+    background-color: #ff19193d;
+}
+.card-2 .card-bg-layer {
+    background-color: #5c5c5c6b;
+}
+.card-3 .card-bg-layer {
+    background-color: #80530065;
+}
+.card-4 .card-bg-layer {
+    background-color: #24364b8f;
+}
+.card-1 {
+    background-image: url("./truimph-scrambler-900.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-2 {
+    background-image: url("./ducati-supersport.jpg");
+    background-repeat: no-repeat;
+    background-position: -50px;
+    background-size: cover;
+}
+.card-3 {
+    background-image: url("./honda-custom-landscape.jpg");
+    background-repeat: no-repeat;
+    background-position: -120px;
+    background-size: cover;
+}
+.card-4 {
+    background-image: url("./honda-goldwing-vintage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

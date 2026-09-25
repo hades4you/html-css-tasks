@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task_19.2</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style>
+			* {
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+			}
+			body {
+				background-color:#0B0F12;
+			}
+			.home {
+				width:400px;
+				background-color:#252C32;
+				padding:20px;
+				color:#E6EDF1;
+				border-radius:20px;
+				margin:50px auto 0 auto;
+			}
+			.partition {
+				width:100%;
+				display:flex;
+			}
+			.top-partition {
+				gap:10px;
+			}
+			.profile-pic {
+				width:35%;
+				border-radius:10px;
+			}
+			.content-container {
+				width:65%;
+			}
+			.online-container {
+				width:28%;
+				background-color:#182126;
+				padding:5px;
+				display:flex;
+				align-items:center;
+				border-radius:12px;
+				justify-content:space-around;
+			}
+			.online-circle {
+				font-size:8px;
+				color:#39D98A;
+			}
+			.online-text {
+				font-size:14px;
+			}
+			.doc-name {
+				margin:10px 0 0 0;
+			}
+			.occupation {
+				font-size:18px;
+			}
+			.rating-container {
+				margin:10px 0 0 0;
+				display:flex;
+				align-items:center;
+				gap:5px;
+			}
+			.rating-circle {
+				font-size:5px;
+			}
+			.rating-star {
+				color:#8B9CF6;
+			}
+			.rating-text {
+				color:#8B9CF6;
+			}
+			.cyber-container {
+				margin:10px 0 0 0;
+				display:flex;
+				gap:5px;
+			}
+			.cyber-icon,.cyber-text {
+				color:#38C6D9;
+			}
+			.mid-partition {
+				margin:10px 0;
+				padding:10px;
+				align-items:center;
+				justify-content:space-between;
+				background-color:#182126;
+				border-radius:10px;
+			}
+			.location-container {
+				display:flex;
+				align-items:center;
+				gap:5px;
+			}
+			.location-text {
+				font-size:18px;
+			}
+			.location-arrow-container {
+				width:20px;
+				height:20px;
+				border-radius:50%;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				background-color:white;
+			}
+			.location-arrow {
+				font-size:10px;
+				color:#0B0F12;
+			}
+			.bottom-partition {
+				justify-content:space-between;
+				gap:15px;
+			}
+			.date-card {
+				width:25%;
+				background-color:#303940;
+				padding:10px 0;
+				text-align:center;
+				border-radius:5px;
+				color:#D8E0E5;
+			}
+			.date {
+				font-size:14px;
+			}
+			.apts {
+				margin:2px 0 0 0;
+			}
+			.fade-text {
+				color:grey;
+			}
+		</style>
+	</head>
+	<body>
+		<!--main div-->
+		<div class="home">
+			<!--top div-->
+			<div class="partition top-partition">
+				<img src="./viktor.jpg" class="profile-pic"/>
+				<!--content div-->
+				<div class="content-container">
+					<!--online div-->
+					<div class="online-container">
+						<i class="fa-solid fa-circle online-circle"></i>
+						<p class="online-text">Online</p>
+					</div>
+					<h2 class="doc-name">Dr.Viktor Vektor</h2>
+					<p class="occupation">Ripperdoc</p>
+					<!--stats div-->
+					<div class="rating-container">
+						<i class="fa-regular fa-star rating-star"></i>
+						<p class="rating-text">5.00 (70)</p>
+						<i class="fa-solid fa-circle rating-circle fade-text"></i>
+						<p class="fade-text">2.1km</p>
+					</div>
+					<!--cyber div-->
+					<div class="cyber-container">
+						<i class="fa-regular fa-eye cyber-icon"></i>
+						<p class="cyber-text">Cyberware installation</p>
+					</div>
+				</div>
+			</div>
+			<!--mid div-->
+			<div class="partition mid-partition">
+				<!--location div-->
+				<div class="location-container">
+					<i class="fa-solid fa-crosshairs location-icon"></i>
+					<p class="location-text">Kabuki, Watson</p>
+				</div>
+				<!--arrow icon-->
+				<div class="location-arrow-container">
+					<i class="fa-solid fa-arrow-right location-arrow"></i>
+				</div>
+			</div>
+			<!--bottom div-->
+			<div class="partition bottom-partition">
+				<!--card 1-->
+				<div class="date-card">
+					<p class="date">29 Aug</p>
+					<p class="apts"><b>2 appts</b></p>
+				</div>
+				<!--card 2-->
+				<div class="date-card">
+					<p class="date">29 Aug</p>
+					<p class="apts"><b>2 appts</b></p>
+				</div>
+				<!--card 3-->
+				<div class="date-card">
+					<p class="date">29 Aug</p>
+					<p class="apts"><b>2 appts</b></p>
+				</div>
+				<!--card 4-->
+				<div class="date-card">
+					<p class="date">29 Aug</p>
+					<p class="apts"><b>2 appts</b></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

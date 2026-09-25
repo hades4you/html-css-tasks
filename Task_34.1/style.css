@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+.main {
+    width: 100%;
+    height: 782px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+}
+.home {
+    width: 90%;
+    display: flex;
+    gap: 20px;
+}
+.card {
+    width: 25%;
+    padding: 30px;
+    border: 5px double white;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #222222;
+}
+.card-img {
+    width: 250px;
+    height: 250px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: #d4d4d4;
+    border: 2px dashed #222222;
+    border-radius: 50%;
+}
+.card:hover {
+    border: 5px dashed white;
+}
+.card:hover .card-img {
+    padding: 0;
+    border: 2px solid #d4d4d4;
+}
+.desc {
+    margin: 10px 0 20px 0;
+    line-height: 24px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+.fa-instagram {
+    color: #ff71c8;
+}
+.fa-reddit {
+    color: #ff650c;
+}
+.fa-discord {
+    color: #8215ff;
+}
+.fa-pinterest {
+    color: rgb(255, 43, 43);
+}

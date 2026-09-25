@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task 22.2</title>
+		<style>
+			* {
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+				border:none;
+			}
+			body {
+				background-color:#3F5F46;
+				color:#F1F3EE;
+			}
+			.home {
+				width:700px;
+				margin:50px auto 0 auto;
+				background-color:#171A17;
+			}
+			.nav {
+				width:100%;
+				padding:10px 15px;
+				display:flex;
+				align-items:center;
+				justify-content:space-between;
+			}
+			.nav-left {
+				display:flex;
+				width:25%;
+				justify-content:space-between;
+				align-items:center;
+			}
+			.nav-left-icon {
+				font-size:12px;
+			}
+			.nav-right-icon {
+				font-size:20px;
+			}
+			.main {
+				width:100%;
+				display:flex;
+				border-top:1px solid #F1F3EE;
+			}
+			.img-div {
+				width:40%;
+				padding:40px;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				border-right:1px solid #F1F3EE;
+			}
+			.plant-pic {
+				width:100%;
+			}
+			.content-div {
+				width:60%;
+				padding:30px;
+			}
+			.category,.plant-desc,.nav-text {
+				font-size:14px;
+			}
+			.plant-desc {
+				padding:0 40px 0 0;
+			}
+			.cost {
+				margin:20px 0;
+			}
+			.button-div {
+				margin:20px 0 0 0;
+				display:flex;
+				gap:10px;
+			}
+			.content-btn {
+				padding:10px 0;
+				width:35%;
+				color:#F1F3EE;
+				background-color:#171A17;
+				border:1px solid #F1F3EE;
+			}
+		</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	</head>
+	<body>
+		<!-- home div -->
+		<div class="home">
+			<!-- nav -->
+			<div class="nav">
+				<div class="nav-left">
+					<i class="fa-solid fa-chevron-left nav-left-icon"></i>
+					<p class="nav-text">BACK TO ALL PLANTS</p>
+				</div>
+				<div class="nav-right">
+					<i class="fa-regular fa-heart nav-right-icon"></i>
+				</div>
+			</div>
+			<div class="main">
+				<div class="img-div">
+					<img src="./bonsai.png" alt="plant" class="plant-pic">
+				</div>
+				<div class="content-div">
+					<h2 class="plant-name">JAPANESE BONSAI</h2>
+					<p class="category"><i>INDOOR BONSAI</i></p>
+					<h1 class="cost">$18</h1>
+					<p class="plant-desc">A carefully shaped miniature tree that brings natural character and quiet elegance indoors. Ideal for adding a touch of greenery to your space.</p>
+					<div class="button-div">
+						<button class="content-btn">ADD TO CART</button>
+						<button class="content-btn">WISHLIST</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

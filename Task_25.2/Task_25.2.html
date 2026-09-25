@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task_25.2</title>
+		<style>
+			* {
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+				border:none;
+				outline:none;
+			}
+			body {
+				background-color:#121212;
+				color:white;
+			}
+			.main {
+				margin:50px auto 0 auto;
+				width:70%;
+				display:flex;
+				border-radius:10px;
+				border-left:20px solid white;
+				border-right:20px solid white;
+			}
+			.desc-area {
+				width:80%;
+				background-color:#252525;
+				padding:20px 30px;
+			}
+			.top-header {
+				margin:0 0 10px 0;
+			}
+			.mid {
+				margin:10px 0;
+				display:flex;
+				align-items:center;
+				justify-content:space-between;
+			}
+			.mid-text {
+				color:#ff7e21;
+				font-size:12px;
+			}
+			.mid-line {
+				width:85%;
+				height:1px;
+				background-color:white;
+			}
+			.bottom {
+				display:flex;
+			}
+			.bottom-table {
+				width:50%;
+			}
+			.check-container {
+				width:25px;
+			}
+			.table-check {
+				font-size:12px;
+				color:#2ffb2b;
+			}
+			td {
+				padding:4px 0;
+			}
+			.purchase-area {
+				width:20%;
+				background-color:#191919;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				text-align:center;
+			}
+			.purchase-base {
+				width:100%;
+			}
+			.scam-price {
+				text-decoration:line-through 1px;
+			}
+			.real-price {
+				margin:10px 0;
+				font-size:32px;
+			}
+			.mini-text {
+				font-size:16px;
+				font-weight:100;
+			}
+			.purchase-btn {
+				padding:8px 28px;
+				border-radius:5px;
+				margin:0 0 15px 0;
+				font-size:12px;
+			}
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	</head>
+	<body>
+		<!-- main -->
+		<main class="main">
+			<!-- description area -->
+			<section class="desc-area">
+				<!-- top-desc-div -->
+				<div class="top">
+					<h2 class="top-header">Serverless SaaS Membership</h2>
+					<p class="top-desc">Buying a license gives you access to the private repository and the resources dashboard. Continue to get updates and resources for building your SaaS product faster. Cancel anytime you or go for a lifetime plan.</p>
+				</div>
+				<!-- mid-partition-div -->
+				<div class="mid">
+					<p class="mid-text">WHAT'S INCLUDED</p>
+					<div class="mid-line">
+					</div>
+				</div>
+				<!-- bottom-perks-div -->
+				<div class="bottom">
+					<table class="bottom-table">
+						<tr>
+							<td class="check-container"><i class="fa-regular fa-circle-check table-check"></i></td>
+							<td class="table-text">Private repository access</td>
+						</tr>
+						<tr>
+							<td class="check-container"><i class="fa-regular fa-circle-check table-check"></i></td>
+							<td class="table-text">Access to new updates</td>
+						</tr>
+						<tr>
+							<td class="check-container"><i class="fa-regular fa-circle-check table-check"></i></td>
+							<td class="table-text">Additional SaaS resources</td>
+						</tr>
+					</table>
+					<table class="bottom-table">
+						<tr>
+							<td class="check-container"><i class="fa-regular fa-circle-check table-check"></i></td>
+							<td class="table-text">Extensive documentaion</td>
+						</tr>
+						<tr>
+							<td class="check-container"><i class="fa-regular fa-circle-check table-check"></i></td>
+							<td class="table-text">Personal license</td>
+						</tr>
+						<tr>
+							<td class="check-container"><i class="fa-regular fa-circle-check table-check"></i></td>
+							<td class="table-text">Email support</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<!-- purchase area -->
+			<section class="purchase-area">
+				<div class="purchase-base">
+					<p class="scam-price">$200/year</p>
+					<h1 class="real-price">$149<span class="mini-text"> / year</span></h1>
+					<button class="purchase-btn"><b>Get Access</b></button>
+					<p class="lifetime-option">Or pick a <b>lifetime</b> plan</p>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

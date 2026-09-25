@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task_20.4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+        body {
+            background-color: #121212;
+            color: #F4F2F7;
+        }
+        .card {
+            background-color:#3e3e3e;
+            margin: 50px auto 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .nav {
+            display:flex;
+            justify-content: space-between;
+            padding:3px;
+            border-radius:20px;
+            border: 1px solid #C9C7D0;
+        }
+        .nav-opt {
+            font-size:18px;
+            padding: 8px 20px;
+        }
+        .nav-center {
+            background-color:#9B6DFF;
+            border-radius:20px;
+        }
+        .cost-container {
+            text-align: center;
+            margin:10px 0 0 0;
+        }
+        .cost-sub {
+            font-size: 12px;
+        }
+        .cost {
+            font-size:50px;
+        }
+        .user {
+            margin:10px 0 20px 0;
+        }
+        .pros-container {
+            padding:10px 0 0 0;
+            border-top: 1px solid #C9C7D0;
+        }
+        .pros {
+            display: flex;
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            gap: 10px;
+            align-items: center;
+        }
+        .bottom-btn {
+            background-color:#9B6DFF;
+            color: white;
+            margin: 20px 0 0 0;
+            padding: 12px 0;
+            width:100%;
+            border-radius: 20px;
+        }
+        .fa-check {
+            width: 14px;
+            height: 14px;
+            color:#9B6DFF;
+        }
+    </style>
+</head>
+<body>
+    <!--card-->
+    <div class="card">
+        <!--nav-->
+        <div class="nav">
+            <p class="nav-opt">Basic</p>
+            <p class="nav-opt nav-center">Standard</p>
+            <p class="nav-opt">Team</p>
+        </div>
+        <!--cost container-->
+        <div class="cost-container">
+            <h1 class="cost"><sup><span class="cost-sub">$</span></sup>99<sub><span class="cost-sub">/month</span></sub></h1>
+            <p class="user">For professional use</p>
+        </div>
+        <!--pros container-->
+        <div class="pros-container">
+            <div class="pros">
+                <i class="fa-solid fa-check"></i>
+                <p>Unlimited GB Premium Bandwidth</p>
+            </div>
+            <div class="pros">
+                <i class="fa-solid fa-check"></i>
+                <p>FREE 200+ installation Scripts WordPress Supported</p>
+            </div>
+            <div class="pros">
+                <i class="fa-solid fa-check"></i>
+                <p>Five FREE Domain Regestiration .com and .np extensions only</p>
+            </div>
+            <div class="pros">
+                <i class="fa-solid fa-check"></i>
+                <p>Unlimited Email Accounts & Databases</p>
+            </div>
+        </div>
+        <!--bottom button-->
+        <button class="bottom-btn">Choose plan</button>
+    </div>
+</body>
+</html>

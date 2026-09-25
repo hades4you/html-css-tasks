@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task_26.4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+        }
+        body {
+            background-color: #121212;
+        }
+        .main {
+            margin: 50px auto 0 auto;
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .main-box {
+            width: 45%;
+        }
+        .card-container {
+            border-radius: 20px 20px 0 0;
+            padding: 40px 50px;
+            width: 100%;
+            background-color: #dcdcdc;
+        }
+        .credit-card {
+            width: 100%;
+        }
+        .detail-form {
+            background-color: #dcdcdc;
+            padding:  0 40px 40px 40px;
+            width: 100%;
+            border-radius: 0 0 20px 20px;
+        }
+        .general-input {
+            width: 100%;
+            height: 40px;
+            margin: 5px 0 0 0;
+            border-radius: 10px;
+            background-color: #cdcdcd;
+            border: 1px solid black;
+            padding: 0 20px;
+        }
+        .top-inupt {
+            margin: 5px 0 10px 0;
+        }
+        .form-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .expire-container {
+            width: 30%;
+        }
+        .cvv-container {
+            width: 40%;
+        }
+        .expire {
+            width: 100%;
+        }
+        .cvv {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <article class="main-box">
+            <div class="card-container">
+                <img class="credit-card" src="./credit-card-front.png" alt="credit-card-front"/>
+            </div>
+            <form class="detail-form">
+                <label class="card-num-label general-label" for="card-num">Card Number:</label>
+                <br/>
+                <input type="number" name="card-num" id="card-num" class="card-num general-input top-inupt"/>
+                <br/>
+                <label class="card-holder-label general-label" for="card-holder">Card Holder:</label>
+                <br/>
+                <input type="text" name="card-holder" id="card-holder" class="card-holder general-input top-inupt"/>
+                <div class="form-bottom">
+                    <div class="expire-container">
+                        <label class="general-label" for="expire">Expires On:</label>
+                        <br/>
+                        <input type="date" id="expire" class="expire general-input"/>
+                    </div>
+                    <div class="cvv-container">
+                        <label class="general-label" for="cvv">cvv:</label>
+                        <br/>
+                        <input type="number" id="cvv" class="cvv general-input"/>
+                    </div>
+                </div>
+            </form>
+        </article>
+        <article class="main-box">
+            <div class="card-container">
+                <img class="credit-card" src="./credit-card-back.png" alt="credit-card-back"/>
+            </div>
+            <form class="detail-form">
+                <label class="card-num-label general-label" for="card-num">Card Number:</label>
+                <br/>
+                <input type="number" name="card-num" id="card-num" class="card-num general-input top-inupt"/>
+                <br/>
+                <label class="card-holder-label general-label" for="card-holder">Card Holder:</label>
+                <br/>
+                <input type="text" name="card-holder" id="card-holder" class="card-holder general-input top-inupt"/>
+                <div class="form-bottom">
+                    <div class="expire-container">
+                        <label class="general-label" for="expire">Expires On:</label>
+                        <br/>
+                        <input type="date" id="expire" class="expire general-input"/>
+                    </div>
+                    <div class="cvv-container">
+                        <label class="general-label" for="cvv">cvv:</label>
+                        <br/>
+                        <input type="number" id="cvv" class="cvv general-input"/>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

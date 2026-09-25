@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.page,
+button {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #242424;
+}
+.page {
+  width: 100%;
+  height: 782px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+}
+.card-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.card-column {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 15px;
+  background-color: #202020;
+  box-shadow:
+    2px 2px 5px 2px rgba(255, 255, 255, 0.05),
+    -2px -2px 5px 2px rgba(255, 255, 255, 0.05),
+    -2px 2px 5px 2px rgba(255, 255, 255, 0.05),
+    2px -2px 5px 2px rgba(255, 255, 255, 0.05),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.05),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.05),
+    inset -1px 1px 2px rgba(255, 255, 255, 0.05),
+    inset 1px -1px 2px rgba(255, 255, 255, 0.05);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.brand-logo {
+  width: 45px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #979797;
+}
+.card-header button {
+  padding: 5px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: white;
+  box-shadow:
+    1px 1px 2px rgba(255, 255, 255, 0.05),
+    -1px -1px 2px rgba(255, 255, 255, 0.05),
+    -1px 1px 2px rgba(255, 255, 255, 0.05),
+    1px -1px 2px rgba(255, 255, 255, 0.05),
+    inset 1px 1px 1px rgba(255, 255, 255, 0.05),
+    inset -1px -1px 1px rgba(255, 255, 255, 0.05),
+    inset -1px 1px 1px rgba(255, 255, 255, 0.05),
+    inset 1px -1px 1px rgba(255, 255, 255, 0.05);
+}
+.card-header .saved {
+  background-color: #383838;
+  color: white;
+}
+
+.card-header > button > i {
+  margin: 0 0 0 3px;
+}
+.card-mid > p > span,
+.salary-container p:last-child {
+  font-size: 12px;
+  color: #cacaca;
+}
+.card-mid > h2 {
+  margin: 10px 0;
+}
+.category {
+  display: flex;
+  gap: 8px;
+}
+.category > button {
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: #666666;
+  color: white;
+}
+.card-footer {
+  width: 100%;
+  margin: 30px 0 0 0;
+  padding: 10px 0 0 0;
+  border-top: 1px solid #cacaca;
+  display: flex;
+  justify-content: space-between;
+}
+.card-footer button {
+  padding: 0 20px;
+  border-radius: 5px;
+  background-color: #dddddd;
+  color: #353535;
+  box-shadow:
+    1px 1px 5px rgba(255, 255, 255, 0.05),
+    -1px -1px 5px rgba(255, 255, 255, 0.05),
+    -1px 1px 5px rgba(255, 255, 255, 0.05),
+    1px -1px 5px rgba(255, 255, 255, 0.05),
+    inset 2px 2px 2px rgba(0, 0, 0, 0.05),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.05),
+    inset -2px 2px 2px rgba(0, 0, 0, 0.05),
+    inset 2px -2px 2px rgba(0, 0, 0, 0.05);
+}
+@media only screen and (min-width: 1050px) and (max-width: 1400px) {
+  .card-container {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1050px) {
+  .card-container {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .page {
+    align-items: start;
+    padding: 20px;
+  }
+  .card-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .card-column {
+    width: 100%;
+    flex-direction: row;
+  }
+  .card {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card-column {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card {
+    width: 100%;
+  }
+}

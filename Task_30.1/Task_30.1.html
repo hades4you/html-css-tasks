@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Task_30.1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- main -->
+    <main class="main">
+        <!-- header -->
+        <h1 class="header">Get in Touch</h1>
+        <div class="home-wrapper">
+
+            <!-- home -->
+            <section class="home">
+                <!-- form div -->
+                <form class="form">
+                    <h2 class="title">Send a Message</h2>
+                    <div class="input-flex">
+                        <div class="input-container">
+                            <label for="fname" class="form-label">First Name</label>
+                            <br />
+                            <input type="text" class="fname" id="fname" name="fname" placeholder="John" />
+                        </div>
+                        <div class="input-container">
+                            <label for="lname" class="form-label">Last Name</label>
+                            <br />
+                            <input type="text" class="lname" id="lname" name="lname" placeholder="Doe" />
+                        </div>
+                    </div>
+                    <div class="input-flex">
+                        <div class="input-container">
+                            <label for="email" class="form-label">Email</label>
+                            <br />
+                            <input type="email" class="email" id="email" name="email" placeholder="johndoe@email.com" />
+                        </div>
+                        <div class="input-container">
+                            <label for="mobile" class="form-label">Mobile</label>
+                            <br />
+                            <input type="number" class="mobile" id="mobile" name="mobile"
+                                placeholder="+00 121 201 2023" />
+                        </div>
+                    </div>
+                    <div class="textarea-container">
+                        <label for="message" class="form-label">Message</label>
+                        <br />
+                        <textarea name="message" id="message" class="message"
+                            placeholder="Write your message here..."></textarea>
+                    </div>
+                    <input type="button" class="form-btn" value="Send" />
+                </form>
+                <!-- side divs container -->
+                <aside class="aside">
+                    <!-- top right div -->
+                    <article class="contact-info-container">
+                        <h2 class="title">Contact Info</h2>
+                        <!-- contact details table -->
+                        <table class="contacts">
+                            <tr>
+                                <td class="contact-icon-box"><i class="fa-solid fa-map-location-dot contact-icon"></i>
+                                </td>
+                                <td class="contact">Santhome Cathedral Basilica, Tamilnadu, India</td>
+                            </tr>
+                            <tr>
+                                <td class="contact-icon-box"><i class="fa-regular fa-envelope contact-icon"></i></td>
+                                <td class=" contact">loremipsum@email.com</td>
+                            </tr>
+                            <tr>
+                                <td class="contact-icon-box"><i class="fa-solid fa-phone contact-icon"></i>
+                                </td>
+                                <td class="contact">+00 121 221 1221</td>
+                            </tr>
+                        </table>
+                        <div class="social">
+                            <i class="fa-brands fa-facebook-f social-icon"></i>
+                            <i class="fa-brands fa-instagram social-icon"></i>
+                            <i class="fa-brands fa-twitter social-icon"></i>
+                            <i class="fa-brands fa-youtube social-icon"></i>
+                        </div>
+                    </article>
+                    <!-- embedded map -->
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0326049609207!2d80.27511447515803!3d13.033595687287544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52687f5255b81f%3A0xa148dd2e4ab794de!2sSanthome%20Cathedral%20Basilica!5e0!3m2!1sen!2sin!4v1789069343868!5m2!1sen!2sin"
+                            class="embedded-map" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </aside>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

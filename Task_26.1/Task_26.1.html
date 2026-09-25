@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+        }
+        body {
+            background-color:#121212;
+        }
+        .header {
+            text-align: center;
+            color: #d1d1d1;
+            margin: 20px;
+        }
+        .title {
+            font-size: 36px;
+            text-decoration: underline;
+        }
+        .main {
+            width:90%;
+            margin:0 auto 40px auto;
+            background-color: #1d1d1d;
+            border: 2px solid #d1d1d1;
+            border-radius:5px;
+            padding: 50px;
+            color: rgb(214, 212, 212);
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .middle-row {
+            margin:60px 0;
+        }
+        .card {
+            width: 30%;
+            padding:30px 50px;
+            text-align: center;
+        }
+        .archive,.device,.image,.audio {
+            width: 100%;
+        }
+        .archive {
+            font-size: 12px;
+        }
+        .device {
+            margin:2px 0 0 0;
+            text-decoration: overline 1px;
+        }
+        .image {
+            padding: 10px 0 10px 0;
+        }
+        .set-1 {
+            background-color: #bbbbbb;
+            color: #333333;
+        }
+        .set-2 {
+            background-color: #0e0e0e;
+            color: #d1d1d1;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <h1 class="title">THE LAST CENTURY</h1>
+        <p class="desc">Before notifications, streaming and instant messages, the world sounded different.</p>
+    </header>
+    <!-- main -->
+    <main class="main">
+	<!-- row 1 -->
+        <section class="row">
+            <div class="card set-1">
+                <p class="archive">ARCHIVE 1900s</p>
+                <p class="device">TELEGRAM</p>
+                <img src="./telegram.jpg" alt="telegram" class="image"/>
+                <audio src="./telegram.mp3" class="audio" controls></audio>
+            </div>
+            <div class="card set-2">
+                <p class="archive">ARCHIVE 1920s</p>
+                <p class="device">ROTARY PHONE</p>
+                <img src="./rotary-phone.jpg" alt="rotary-phone" class="image"/>
+                <audio src="./rotary-phone.mp3" class="audio" controls></audio>
+            </div>
+            <div class="card set-1">
+                <p class="archive">ARCHIVE 1930s</p>
+                <p class="device">TYPEWRITER</p>
+                <img src="./typewriter.jpg" alt="typewriter" class="image"/>
+                <audio src="./typewriter.mp3" class="audio" controls></audio>
+            </div>
+        </section>
+	<!-- row 2 -->
+        <section class="row middle-row">
+            <div class="card set-2">
+                <p class="archive">ARCHIVE 1940s</p>
+                <p class="device">RADIO</p>
+                <img src="./radio.jpg" alt="radio" class="image"/>
+                <audio src="./radio.mp3" class="audio" controls></audio>
+            </div>
+            <div class="card set-1">
+                <p class="archive">ARCHIVE 1950s</p>
+                <p class="device">VINYL RECORD</p>
+                <img src="./vinyl.jpg" alt="vinyl" class="image"/>
+                <audio src="./vinyl.mp3" class="audio" controls></audio>
+            </div>
+            <div class="card set-2">
+                <p class="archive">ARCHIVE 1960s</p>
+                <p class="device">FILM PROJECTOR</p>
+                <img src="./film.jpg" alt="film" class="image"/>
+                <audio src="./film.mp3" class="audio" controls></audio>
+            </div>
+        </section>
+	<!-- row 3 -->
+        <section class="row">
+            <div class="card set-1">
+                <p class="archive">ARCHIVE 1970s</p>
+                <p class="device">CRT TELEVISION</p>
+                <img src="./crt-television.jpg" alt="crt-television" class="image"/>
+                <audio src="./crt-television.wav" class="audio" controls></audio>
+            </div>
+            <div class="card set-2">
+                <p class="archive">ARCHIVE 1980s</p>
+                <p class="device">ARCADE MACHINE</p>
+                <img src="./arcade.jpg" alt="arcade" class="image"/>
+                <audio src="./arcade.mp3" class="audio" controls></audio>
+            </div>
+            <div class="card set-1">
+                <p class="archive">ARCHIVE 1980s</p>
+                <p class="device">CASSETTE PLAYER</p>
+                <img src="./cassette-player.jpg" alt="cassette-player" class="image"/>
+                <audio src="./cassette-player.mp3" class="audio" controls></audio>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

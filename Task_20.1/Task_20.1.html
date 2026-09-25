@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task_20.1</title>
+		<style>
+			* {
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+				border:none;
+			}
+			body {
+				background-color:#171A17;
+				color: #A2A2A2;
+			}
+			.main {
+				width:350px;
+				padding:30px;
+				margin:50px auto 0 auto;
+				background-color:#A2A2A2;
+			}
+			.card {
+				width:100%;
+				padding:10px;
+				background-color:#121212;
+			}
+			.top-icon-container {
+				text-align:right;
+				font-size:20px;
+			}
+			.top-icon {
+				color:#4C7A52;
+			}
+			.profile-pic {
+				width:35%;
+				border-radius:50%;
+			}
+			.name {
+				margin:20px 0 0 0;
+				color:#4C7A52;
+			}
+			.occupation {
+				margin:10px 0;
+			}
+			.description {
+				margin:0 0 20px 0;
+			}
+			.social {
+				padding:20px 0 0 0;
+				border-top:1px solid #F4F1E8;
+				display:flex;
+				align-items:center;
+				gap:30px;
+			}
+			.social-text {
+				font-size:14px;;
+			}
+			.follow-btn {
+				margin:70px 0 0 0;
+				width:100%;
+				padding:15px;
+				background-color: #4C7A52;
+				color: white;
+			}
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<!--main div-->
+		<div class="main">
+			<!--card-->
+			<div class="card">
+				<!--top icon-->
+				<p class="top-icon-container"><i class="fa-solid fa-dove top-icon"></i></p>
+				<img src="./joseph_seed_table.jpg" class="profile-pic"/>
+				<h1 class="name">Joseph Seed</h1>
+				<p class="occupation">Father / Project at Eden's Gate</p>
+				<p class="description">“The Father watches over his flock, guiding them toward salvation and peace.”</p>
+				<!--social-->
+				<div class="social">
+					<!--followers-->
+					<div class="social-details">
+						<h2 class="count">7435</h2>
+						<p class="social-text">Followers</p>
+					</div>
+					<!--following-->
+					<div class="social-details">
+						<h2 class="count">3</h2>
+						<p class="social-text">Following</p>
+					</div>
+				</div>
+				<button class="follow-btn"><b>Follow</b></button>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task_27.1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+        }
+        body {
+            background-color: #121212;
+        }
+        p {
+            font-size: 18px;
+        }
+        .main {
+            margin: 0 auto;
+            width: 80%;
+            background-color: #3f3f3f;
+            color: white;
+        }
+        .top {
+            width: 100%;
+            display: flex;
+        }
+        .scrambler-video {
+            width: 50%;
+        }
+        .aside {
+            width: 50%;
+            width: 100%;
+            padding: 0 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #35251B;
+        }
+        .title {
+            font-size: 42px;
+        }
+        .desc {
+            margin: 10px 0 0 0;
+        }
+        .list-container {
+            width: 100%;
+            margin: 20px 0;
+        }
+        .list-element {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .mid-list-element {
+            margin: 20px 0;
+        }
+        .list-icon-container {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: #A98B6A;
+        }
+        .list-icon {
+            font-size: 34px;
+        }
+        .bottom {
+            background-color: #3d3d3d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px 300px;
+        }
+        .line {
+            width: 70px;
+            height: 2px;
+            background-color: #A98B6A;
+        }
+        .quote-text {
+            margin: 5px 0 10px 0;
+            padding: 0 25px;
+        }
+        .top-line-div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .bottom-line-div {
+            padding: 0 25px;
+        }
+        .bottom-icon {
+            font-size: 40px;
+            color: #B8956A;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <main class="main">
+        <section class="top">
+            <video class="scrambler-video" src="./scrambler_video_sq.mp4" autoplay muted loop></video>
+            <aside class="aside">
+                <div class="aside-container">   
+                    <h1 class="title">Where Every Road Leads to Adventure</h1>
+                    <p class="desc">Every ride tells a story. Discover the freedom of open roads, winding trails, and unforgettable journeys.</p>
+                    <div class="list-container">
+                        <div class="list-element">
+                            <div class="list-icon-container"><i class="fa-solid fa-screwdriver-wrench list-icon"></i></div>
+                            <div class="list-text-container">
+                                <h2 class="list-title">Built for the Ride</h2>
+                                <p class="list-text">Crafted to handle every journey with confidence.</p>
+                            </div>
+                        </div>
+                        <div class="list-element mid-list-element">
+                            <div class="list-icon-container"><i class="fa-solid fa-flag-checkered list-icon"></i></div>
+                            <div class="list-text-container">
+                                <h2 class="list-title">Adventure Ready</h2>
+                                <p class="list-text">Made for roads that lead beyond the ordinary.</p>
+                            </div>
+                        </div>
+                        <div class="list-element">
+                            <div class="list-icon-container"><i class="fa-solid fa-compass list-icon"></i></div>
+                            <div class="list-text-container">
+                                <h2 class="list-title">Freedom to Explore</h2>
+                                <p class="list-text">Ride farther, wander longer, and discover more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="aside-bottom-text">From quiet mountain roads to rugged trails, every journey begins with the courage to take the road less traveled.</p>
+                </div>
+            </aside>
+        </section>
+        <section class="bottom">
+            <div class="bottom-container">
+                <div class="top-line-div">
+                    <i class="fa-solid fa-quote-left bottom-icon"></i>
+                    <div class="line"></div>
+                </div>
+                <h2 class="quote-text">The best journeys are not measured by the miles we travel, but by the roads we choose, the places we discover, and the stories we bring back.</h2>
+                <div class="bottom-line-div">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

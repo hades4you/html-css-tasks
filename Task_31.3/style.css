@@ -1,0 +1,69 @@
+body,div,main,section,article,h1,h2,h3,p,i {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+main {
+    width: 100%;
+    height: 782px;
+    background-image: url("./white-table-top-view.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home {
+    width: 100%;
+    height: 100%;
+    background-color: #121212b6;
+    color: #ffffff;
+}
+.header {
+    font-size: 50px;
+    height: 15%;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cards-container {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+}
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+.top-row {
+    margin: 0 0 100px 0;
+}
+.card {
+    width: 50%;
+    gap: 20px;
+    padding: 0 80px 0;
+    display: flex;
+}
+.card-icon {
+    font-size: 32px;
+    color: rgb(33, 103, 255);
+}
+.review {
+    margin: 0 0 20px 0;
+    line-height: 20px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+.uname {
+    letter-spacing: 2px;
+}
+.urole {
+    margin: 5px 0 0 0;
+    letter-spacing: 2px;
+    font-size: 12px;
+}

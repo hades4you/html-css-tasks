@@ -1,0 +1,119 @@
+body,div,main,section,aside,article,h1,h2,p,form,label,input,textarea,table,tr,td,th,iframe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+input,textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bebebe;
+    border-radius: 3px;
+    margin: 5px 0 0 0;
+    background-color: #252525;
+}
+input::placeholder,textarea::placeholder {
+    color: #bebebe;
+}
+table,td {
+    border-collapse: collapse;
+}
+.message {
+    height: 200px;
+    resize: none;
+}
+.main {
+    margin: 0 auto;
+    width: 100%;
+    height: 782px;
+    color: #e8e8e8;
+    background-color: #121212;
+}
+.header {
+    text-align: center;
+}
+.home-wrapper {
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 0 50px;
+}
+.form {
+    width: 75%;
+    padding: 30px;
+    background-color: #323232;
+}
+.input-flex {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    margin: 20px 0 0 0;
+    justify-content: space-between;
+}
+.input-container {
+    width: 50%;
+}
+.textarea-container {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+.form-btn {
+    width: 10%;
+    background-color: #ff2c2c;
+    color: #e8e8e8;
+    border: none;
+}
+.aside {
+    width: 30%;
+}
+.contact-info-container {
+    width: 100%;
+    padding: 30px;
+    background-color: #302947;
+}
+.contacts {
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+.contact-icon-box {
+    padding: 5px 0;
+}
+.contact {
+    padding: 2px 10px;
+}
+.contact-icon {
+    background-color: #5c21ff;
+    color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.social {
+    margin: 20px 0 0 0;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.social-icon {
+    color: #919191;
+    font-size: 20px;
+}
+.map-container {
+    margin: 20px 0 0 0;
+    width: 100%;
+    height: 251px;
+}
+.embedded-map {
+    width: 100%;
+    height: 100%;
+}

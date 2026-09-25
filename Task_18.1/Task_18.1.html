@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task_18.1</title>
+		<style>
+			* {
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+			}
+			body {
+				background-color:#111111;
+			}
+			table,th,td {
+				border:2px solid #5A6068;
+				padding:10px;
+				text-align:center;
+			}
+			table {
+				padding:0;
+				color:#E8E8E8;
+				background-color:#191C20;
+				margin:0 auto;
+			}
+			th {
+				background-color:#252A30;
+			}
+			.day {
+				background-color:#5A1E24;
+			}
+			.sports {
+				background-color:#155A4A;
+			}
+			.title {
+				text-align:center;
+				margin:20px 0;
+				background-color:#1C1C1C;
+				border-top:3px solid #707070;
+				border-bottom:3px solid #707070;
+				color:#F5F5F5;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="title">TIME TABLE</h1>
+		<table>
+			<colgroup>
+				<col span="1" class="day"/>
+			</colgroup>
+			<tr>
+				<th>
+					Day/Period
+				</th>
+				<th>
+					<p>I</p>
+					<p>9:30-10:20</p>
+				</th>
+				<th>
+					<p>II</p>
+					<p>9:30-10:20</p>
+				</th>
+				<th>
+					<p>II</p>
+					<p>9:30-10:20</p>
+				</th>
+				<th>
+					<p>9:30-10:20</p>
+				</th>
+				<th>
+					<p>IV</p>
+					<p>9:30-10:20</p>
+				</th>
+				<th>
+					<p>V</p>
+					<p>9:30-10:20</p>
+				</th>
+				<th>
+					<p>VI</p>
+					<p>9:30-10:20</p>
+				</th>
+				<th>
+					<p>VII</p>
+					<p>9:30-10:20</p>
+				</th>
+			</tr>
+			<tr>
+				<td><b>Monday</b></td>
+				<td>Tamil</td>
+				<td>Maths</td>
+				<td>Science</td>
+				<td rowspan="6">
+					<p><b>L</b></p>
+					<p><b>U</b></p>
+					<p><b>N</b></p>
+					<p><b>C</b></p>
+					<p><b>H</b></p>
+				</td>
+				<td>English</td>
+				<td>Physics</td>
+				<td>Social</td>
+				<td>Chemistry</td>
+			</tr>
+			<tr>
+				<td><b>Tuesday</b></td>
+				<td colspan="3">LABORATORY</td>
+				<td>English</td>
+				<td>Chemistry</td>
+				<td>Maths</td>
+				<td class="sports">SPORTS</td>
+			</tr>
+			<tr>
+				<td><b>Wednesday</b></td>
+				<td>Maths</td>
+				<td>Physics</td>
+				<td>English</td>
+				<td>Chemistry</td>
+				<td colspan="2">LIBRARY</td>
+				<td>Chemistry</td>
+			</tr>
+			<tr>
+				<td><b>Thursday</b></td>
+				<td>Physics</td>
+				<td>English</td>
+				<td>Chemistry</td>
+				<td>Tamil</td>
+				<td>Maths</td>
+				<td>Science</td>
+				<td>Maths</td>
+			</tr>
+			<tr>
+				<td><b>Friday</b></td>
+				<td>Maths</td>
+				<td>Chemistry</td>
+				<td>English</td>
+				<td>Physics</td>
+				<td colspan="3">LABORATORY</td>
+			</tr>
+			<tr>
+				<td><b>Saturday</b></td>
+				<td>English</td>
+				<td>Chemistry</td>
+				<td>Maths</td>
+				<td>Tamil</td>
+				<td>Maths</td>
+				<td>English</td>
+				<td class="sports">SPORTS</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+body,section,article,h1,h2,p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    background-color: #121212;
+}
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+.main {
+    margin: 20px auto 0 auto;
+    width: 80%;
+}
+.header {
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+.card-container {
+    width: 100%;
+}
+.card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.desc {
+    margin: 10px 0;
+}
+.card-1 {
+    background-color: #2b65fb;
+    background-image: url("./help-desk.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.card-2 {
+    background-color: #fb462b;
+    margin: 20px 0;
+    background-image: url("./construction.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    
+}
+.card-3 {
+    background-color: #782bfb;
+    background-image: url("./delivery.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    
+}

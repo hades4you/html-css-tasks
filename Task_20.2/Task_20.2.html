@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task_20.2</title>
+		<style>
+			* {
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+				border:none;
+			}
+			body {
+				background-color:#121212;
+			}
+			.card {
+				width:400px;
+				height:230px;
+				margin:50px auto 0 auto;
+				padding:25px;
+				border-radius:20px;
+				background-color:#4F4F4F;
+			}
+			.container {
+				width:100%;
+				display:flex;
+			}
+			.top-div {
+				height:20%;
+				justify-content:space-between;
+			}
+			.mastercard-logo,chip-img {
+				height:100%;
+			}
+			.mid-div {
+				margin:50px 0 0 0;
+			}
+			.card-number-label,.validity-date-label {
+				font-size:12px;
+			}
+			.card-number {
+				margin:5px 0 0 0;
+				font-size:18px;
+			}
+			.bottom-div {
+				margin:20px 0 0 0;
+				justify-content:space-between;
+				align-items:center;
+			}
+		</style>
+	</head>
+	<body>
+		<!--card-->
+		<div class="card">
+			<!--img div-->
+			<div class="top-div container">
+				<img src="./mastercard_logo.png" alt="mastercard_logo" class="mastercard-logo"/>
+				<img src="./chip_img.png" alt="./chip_img" class="chip-img"/>
+			</div>
+			<!--number div-->
+			<div class="mid-div">
+				<p class="card-number-label">Card Number</p>
+				<p class="card-number">8678 6732 3243 4324</p>
+			</div>
+			<!--holder div-->
+			<div class="bottom-div container">
+				<p class="card-holder-name">John Doe</p>
+				<div class="validity-box">
+					<p class="validity-date-label">Valid Thru</p>
+					<p class="validity-date">02/30</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

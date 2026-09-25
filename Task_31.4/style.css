@@ -1,0 +1,98 @@
+body,main,div,header,section,form,aside,h1,h2,h3,p,input,label,textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+p {
+    font-size: 18px;
+}
+input {
+    margin: 10px 0 0 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+input::placeholder,textarea::placeholder {
+    color: #a1a1a1;
+}
+textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 178px;
+    padding: 10px;
+    background-color: #363636;
+    border: 1px solid white;
+    resize: none;
+}
+label {
+    font-size:18px;
+}
+.main {
+    width: 100%;
+    height: 782px;
+    padding: 50px;
+    background-color: #121212;
+    color: white;
+}
+.home {
+    width: 100%;
+    height: 100%;
+}
+.header {
+    width: 100%;
+    height: 18%;
+}
+.title {
+    margin: 0 0 10px 0;
+}
+.form-area {
+    width: 100%;
+    height: 82%;
+    display: flex;
+}
+.form {
+    width: 70%;
+    height: 100%;
+    padding: 30px;
+    background-color: #363636;
+}
+.form-title {
+    margin: 0 0 30px 0;
+}
+.input-row {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+.input-label-pair {
+    width: 50%;
+}
+.send {
+    margin: 20px 0 0 0;
+    width: 12%;
+    border: none;
+    color: white;
+    background-color: #1973fa;
+    border-radius: 20px;
+}
+.contact {
+    width: 30%;
+    height: 100%;
+    padding: 30px;
+    background-color: #1973fa;
+}
+.contact-table {
+    margin: 30px 0 0 0;
+    font-size: 18px;
+}
+.contact-table,.contact-table td {
+    border-collapse: collapse;
+}
+.contact-details {
+    padding: 15px 50px 15px 15px;
+}

@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task_22.1</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+				border:none;
+			}
+			body {
+				background-color:#222222;
+				color:#FFFFFF;
+			}
+			.main {
+				display:flex;
+				margin:50px auto 0 auto;
+				width:650px;
+			}
+			.join-form {
+				background-color:#121212;
+				width:65%;
+				padding:30px;
+				border-radius:20px 0 0 20px;
+			}
+			.top-text {
+				font-size:14px;
+			}
+			.yellove {
+				color:#C11202;
+				margin:5px 0 0 0;
+			}
+			.img-div {
+				background-color:#000000;
+				width:35%;
+				display:flex;
+				align-items:center;
+				border-radius:0 20px 20px 0;
+			}
+			.samurai-logo {
+				width:100%;
+			}
+			input {
+				border:1px solid white;
+				background-color:#151515;
+				color:white;
+			}
+			.top-input {
+				margin:20px 0 0 0;
+				padding:10px 10px;
+				width:100%;
+				border-radius:20px;
+			}
+			.input-container {
+				display:flex;
+				align-items:center;
+				gap:10px;
+				margin:20px 0 0 0;
+			}
+			.mobile-container {
+				display:flex;
+				margin:20px 0 0 0;
+			}
+			.mobile-code {
+				width:20%;
+				border-radius:20px 0 0 20px;
+				padding:10px 10px;
+				border:1px solid white;
+				background-color:#151515;
+				border-right:none;
+				color:white;
+			}
+			.mobile-number {
+				width:80%;
+				padding:10px 10px;
+				border-radius:0 20px 20px 0;
+				border-left:none;
+			}
+			.half-width-input {
+				width:50%;
+				padding:10px 10px;
+				border-radius:20px;
+			}
+			.gender-container {
+				width:50%;
+				display:flex;
+				align-items:center;
+				padding:10px 0;
+			}
+			.gender-button {
+				margin:0 5px 0 10px;
+				width:12px;
+				height:12px;
+			}
+			.tnc-container {
+				margin:20px 0 0 0;
+				display:flex;
+				align-items:start;
+				gap:5px;
+				justify-content:start;
+			}
+			.tnc-box {
+				width:16px;
+				height:16px;
+			}
+			.tnc {
+				font-size:14px;
+			}
+			.register {
+				width:100%;
+				margin:20px 0 0 0;
+				padding:10px;
+				border-radius:20px;
+			}
+			.member {
+				font-size:12px;
+				margin:10px 0 0 0;
+				text-align:center;
+			}
+			.tnc-highlight {
+				color:#C11202;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- main -->
+		<div class="main">
+			<!-- form -->
+			<form class="join-form">
+				<p class="top-text">Signup to</p>
+				<h2 class="yellove">Join the #$A/URA! club</h2>
+				<input type="text" placeholder="First Name *" class="fname top-input"/>
+				<br/>
+				<input type="text" placeholder="Last Name *" class="lname top-input"/>
+				<br/>
+				<input type="text" placeholder="Email *" class="email top-input"/>
+				<div class="mobile-container">
+					<select class="mobile-code">
+						<option>+91</option>
+						<option>+21</option>
+						<option>+881</option>
+						<option>+00</option>
+					</select>
+					<input type="number" placeholder="Enter Mobile Number *" class="mobile-number"/>
+				</div>
+				<div class="input-container">
+					<input type="date" class="date half-width-input"/>
+					<div class="gender-container">
+						<input type="radio" value="male" class="gender-button"/>
+						<label class="gender">Male</label>
+						<input type="radio" value="female" class="gender-button"/>
+						<label class="gender">Female</label>
+					</div>
+				</div>
+				<div class="input-container">
+					<input type="password" placeholder="4 Digit PIN *" class="half-width-input"/>
+					<input type="password" placeholder="Re-Enter PIN *" class="half-width-input"/>
+				</div>
+				<div class="tnc-container">
+					<input type="checkbox" class="tnc-box"/>
+					<p class="tnc">I agree to the <span class="tnc-highlight">Terms & Conditions</span> and <span class="tnc-highlight">Privacy Policy</span> of Chennai Super Kings Cricket Ltd*</p>
+				</div>
+				<button class="register"><b>REGISTER</b></button>
+				<p class="member">Already a member? <b>Sign In</b></p>
+			</form>
+			<!--img div-->
+			<div class="img-div">
+				<img src="./samurai-logo.webp" class="samurai-logo"/>
+			</div>
+		</div>
+	</body>
+</html>

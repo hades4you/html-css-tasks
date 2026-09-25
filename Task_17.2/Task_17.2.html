@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task_17.2</title>
+		<style>
+			* {
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+			}
+			body {
+				background-color:#E8EBEF;
+			}
+			.home {
+				margin:50px auto 0 auto;
+				width:70%;
+				border:2px solid #4A5D73;
+				padding:20px;
+				border-radius:5px;
+			}
+			table,th,td {
+				border:1px solid #B7BDC5;
+				text-align:center;
+				padding:10px 10px;
+				color:#303640;
+				border-collapse:collapse;
+			}
+			table {
+				width:100%;
+			}
+			th {
+				background-color:#4A5D73;
+				color:#FFFFFF;
+			}
+			.agent-img {
+				background-color:#D5DCE4;
+				width:70px;
+				border-radius:50%;
+				border:5px solid #8C96A3;
+			}
+			.img-container {
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			.agent-button {
+				padding:5px 15px;
+				border-radius:2px;
+			}
+			.button-container {
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				gap:10px;
+			}
+			.left-button {
+				background-color:#DCE1E7;
+				border:2px solid #9AA3AE;
+				color:#303640;
+			}
+			.right-button {
+				background-color:#536B82;
+				border:2px solid #3F5265;
+				color:#FFFFFF;
+			}
+			.set-1 {
+				background-color:#F7F8F9;
+			}
+			.set-2 {
+				background-color:#E4E7EB;
+			}
+		</style>
+	</head>
+	<body>
+		<!-main div-->
+		<div class="home">
+			<table>
+				<tr>
+					<th>SI</th>
+					<th>Image</th>
+					<th>Name</th>
+					<th>Phone</th>
+					<th>Address</th>
+					<th>Action</th>
+				</tr>
+				<!--agent 1-->
+				<tr class="set-1">
+					<td>01</td>
+					<td>
+						<div class="img-container">
+							<img src="./jett.png" class="agent-img"/>
+						</div>
+					</td>
+					<td>Jett</td>
+					<td>+82 10 48**-****</td>
+					<td>Seoul, South Korea</td>
+					<td>
+						<div class="button-container">
+							<button class="agent-button left-button">Profile</button>
+							<button class="agent-button right-button">Call</button>
+						</div>
+					</td>
+				</tr>
+				<!--agent 2-->
+				<tr class="set-2">
+					<td>02</td>
+					<td>
+						<div class="img-container">
+							<img src="./cypher.png" class="agent-img"/>
+						</div>
+					</td>
+					<td>Cypher</td>
+					<td>+212 6 48**-****</td>
+					<td>Rabat, Morocco</td>
+					<td>
+						<div class="button-container">
+							<button class="agent-button left-button">Profile</button>
+							<button class="agent-button right-button">Call</button>
+						</div>
+					</td>
+				</tr>
+				<!--agent 3-->
+				<tr class="set-1">
+					<td>03</td>
+					<td>
+						<div class="img-container">
+							<img src="./omen.png" class="agent-img"/>
+						</div>
+					</td>
+					<td>Omen</td>
+					<td>+00 000 00**-****</td>
+					<td>Unknown</td>
+					<td>
+						<div class="button-container">
+							<button class="agent-button left-button">Profile</button>
+							<button class="agent-button right-button">Call</button>
+						</div>
+					</td>
+				</tr>
+				<!--agent 4-->
+				<tr class="set-2">
+					<td>04</td>
+					<td>
+						<div class="img-container">
+							<img src="./fade.png" class="agent-img"/>
+						</div>
+					</td>
+					<td>Fade</td>
+					<td>+90 532 48**-****</td>
+					<td>Istanbul, Türkiye</td>
+					<td>
+						<div class="button-container">
+							<button class="agent-button left-button">Profile</button>
+							<button class="agent-button right-button">Call</button>
+						</div>
+					</td>
+				</tr>
+				<!--agent 5-->
+				<tr class="set-1">
+					<td>05</td>
+					<td>
+						<div class="img-container">
+							<img src="./killjoy.png" class="agent-img"/>
+						</div>
+					</td>
+					<td>Killjoy</td>
+					<td>+49 151 48**-****</td>
+					<td>Berlin, Germany</td>
+					<td>
+						<div class="button-container">
+							<button class="agent-button left-button">Profile</button>
+							<button class="agent-button right-button">Call</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

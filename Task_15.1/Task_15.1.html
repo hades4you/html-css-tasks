@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task_15.1</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style>
+			body {
+				margin:0;
+				background-color:#171717;
+				color:#DDD8D0;
+			}
+			h1 {
+				margin:0;
+			}
+			p {
+				margin:0;
+			}
+			div {
+				margin:0;
+			}
+			.home {
+				width:100%;
+			}
+			.navbar {
+				width:100%;
+				display:flex;
+				justify-content:space-between;
+				align-items:center;
+				padding:20px;
+				box-sizing:border-box;
+			}
+			.logo-box{
+				width:20px;
+				height:20px;
+				background-color:#D4D4D4;
+				border-radius:50%;
+			}
+			.navbar-left {
+				display:flex;
+				align-items:center;
+			}
+			.navbar-name {
+				font-size:18px;
+				margin-left:5px;
+			}
+			.navbar-model {
+				font-size:14px;
+				margin-left:5px;
+			}
+			.navbar-btn {
+				border:none;
+				background-color:transparent;
+				box-sizing:border-box;
+				padding:5px 20px;
+				color:#DDD8D0;
+			}
+			.navbar-mid-btn {
+				border-left:1px solid #DDD8D0;
+				border-right:1px solid #DDD8D0;
+			}
+			.hero-container {
+				width:100%;
+				display:flex;
+				justify-content:center;
+				padding-top:100px;
+			}
+			.hero {
+				width:65%;
+				display:flex;
+				gap:20px;
+			}
+			.main-img {
+				width:50%;
+				border-radius:50%;
+			}
+			.content-container {
+				width:50%;
+				display:flex;
+				align-items:end;
+			}
+			.ring-container {
+				display:flex;
+				justify-content:space-between;
+			}
+			.ring {
+				width:150px;
+				height:150px;
+				box-sizing:border-box;
+				border-radius:50%;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				color:#171717;
+			}
+			.greeting {
+				font-size:70px;
+			}
+			.subject {
+				margin:25px 0 15px 0;
+			}
+			.content {
+				margin:0 0 40px 0;
+			}
+			.text-mod {
+				font-size:20px;
+			}
+			.ring-1 {
+				background-color:#D4D4D4;
+			}
+			.ring-2 {
+				background-color:#A6A6A6;
+			}
+			.ring-3 {
+				background-color:#737373;
+			}
+		</style>
+	</head>
+	<body>
+		<!--main div-->
+		<div class="home">
+			<!--navbar-->
+			<div class="navbar">
+				<div class="navbar-left">
+					<div class="logo-box">
+					</div>
+					<p class="navbar-name"><b>Honda CB350</b><span class="navbar-model">Classic Roadster</span></p>
+				</div>
+				<div class="navbar-right">
+					<button class="navbar-btn">Specs</button>
+					<button class="navbar-btn navbar-mid-btn">Rides</button>
+					<button class="navbar-btn">Contact</button>
+				</div>
+			</div>
+			<div class="hero-container">
+				<div class="hero">
+					<img src="./bike.jpeg" alt="bike" class="main-img"/>
+					<div class="content-container">
+						<div class="bottom-box">
+							<h1 class="greeting">Ride Beyond</h1>
+							<p class="subject text-mod"><b>About the Ride</b></p>
+							<p class="content">Built for relaxed journeys and everyday adventures, combining timeless character with a confident road presence. Designed for riders who enjoy the open road, it brings comfort, character, and a sense of freedom to every journey.</p>
+							<div class="ring-container">
+								<div class="ring text-mod ring-1">
+									<p><b>Specs</b></p>
+								</div>
+								<div class="ring text-mod ring-2">
+									<p><b>Rides</b></p>
+								</div>
+								<div class="ring text-mod ring-3">
+									<p><b>Contact</b></p>
+								</div>
+							</div>
+						</div>
+					<div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

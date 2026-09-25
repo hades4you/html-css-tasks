@@ -1,0 +1,138 @@
+body,main,section,div,h1,h2,h3,p,i,button,table,tr,th,td {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    border: none;
+    outline: none;
+}
+.main {
+    width: 100%;
+    height: 782px;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    border-radius: 20px;
+    background-color: #242424;
+}
+.left-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.left-side-content {
+    width: 100%;
+    padding: 0 60px;
+}
+.check-container {
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 52px;
+    background-color: #379335ad;
+    color: #2ffb2b;
+}
+.left-content-container {
+    margin: 40px 0 60px;
+    text-align: center;
+}
+.left-content-container h3 {
+    font-size: 17px;
+}
+.left-content-container p {
+    padding: 0 10px;
+    margin: 5px;
+}
+.left-btn-container {
+    width: 100%;
+}
+.left-btn-container button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.top-btn {
+    background-color: #3fc33c;
+    color: white;
+}
+.bottom-btn {
+    margin: 10px 0 0 0;
+}
+.right-side {
+    width: 50%;
+    border-radius: 10px;
+    background-color: #333333;
+}
+.cross-container {
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+}
+.right-content-container {
+    padding: 0 30px 30px;
+}
+.client-details {
+    margin: 40px 0 20px 0;
+}
+.task-details {
+    margin: 0 0 20px 0;   
+}
+.client-header,.task-header {
+    margin: 0 0 5px 0;
+}
+.hr-table-container {
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.hr-table,.hr-table th,.hr-table td {
+    width: 100%;
+    border-collapse: collapse;
+}
+.hr-table td {
+    padding: 8px 0;
+    border-collapse:collapse;
+}
+.hr-table th {
+    border-top: 1px solid white;
+    padding: 15px 0;
+    color: #3fc33c;
+    text-align: end;
+}
+.mid-row {
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: white;
+}
+.mid-row + tr td {
+    padding-bottom:15px;
+}
+.com-table {
+    margin: 20px 0 70px 0;
+    width: 100%;
+    padding: 0 10px;
+}
+.right-column {
+    text-align: end;
+}
+.total-cost-container {
+    width: 100%;
+    text-align: end;
+    padding: 0 10px;
+    color: #3fc33c;
+}

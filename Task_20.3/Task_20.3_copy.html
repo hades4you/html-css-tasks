@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task_20.3</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+		<style>
+			* {
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+				border:none;
+			}
+			body {
+				background-color:#121212;
+				color:#E8E4D8;
+			}
+			table {
+				background-color:#3F3F3F;
+				text-align:center;
+				margin:50px auto 0 auto;
+				width:35%;
+			}
+			table,th,td {
+				border-collapse:collapse;
+			}
+			td {
+				padding:15px;
+				border-left:1px solid white;
+			}
+			th {
+				padding:10px 20px;
+			}
+			.col-width {
+				width:25%;
+			}
+			.row-1 {
+				padding:0;
+			}
+			.plan {
+				padding:10px 0;
+			}
+			.popular-container {
+				height:20px;
+				display:flex;
+				justify-content:end;
+				align-items:center;
+			}
+			.popular-text {
+				font-size:10px;
+				padding:2px 5px;
+				color: #121212;
+				background-color:yellow;
+			}
+			.month,.bill,.pay-btn {
+				font-size:12px;
+			}
+			.bill {
+				margin:5px 0;
+			}
+			.pay-btn {
+				padding:5px 12px;
+				border-radius:12px;
+				background-color:#5F5F5F;
+			}
+			.services {
+				text-align:left;
+				border:none;
+			}
+			.fa-circle-arrow-right {
+				margin:10px 0 0 0;
+			}
+			.header-1 {
+				background-color:#00A6A6;
+			}
+			.check-1 {
+				color:#00A6A6;
+			}
+			.btn-1 {
+				color:#00A6A6;
+				border:1px solid #00A6A6;
+			}
+			.header-2 {
+				background-color:#5FAFC8;
+			}
+			.check-2 {
+				color:#5FAFC8;
+			}
+			.btn-2 {
+				color:#5FAFC8;
+				border:1px solid #5FAFC8;
+			}
+			.header-3 {
+				background-color:#C9A83E;
+			}
+			.check-3 {
+				color:#C9A83E;
+			}
+			.btn-3 {
+				color:#C9A83E;
+				border:1px solid #C9A83E;
+			}
+		</style>
+	</head>
+	<body>
+		<!--table-->
+		<table>
+			<!--header row-->
+			<tr>
+				<th rowspan="2" class="col-width">
+					<h2>Select your plan</h2>
+					<i class="fa-solid fa-circle-arrow-right"></i>
+				</th>
+				<th class="col-width header-1">Starter</th>
+				<th class="col-width header-2">Essential</th>
+				<th class="col-width header-3">Professional</th>
+			</tr>
+			<!--content row 1-->
+			<tr>
+				<td class="row-1">
+					<div class="plan">
+						<div class="popular-container">
+						</div>
+						<h1 class="cost check-1">$15</h1>
+						<p class="month check-1">month</p>
+						<p class="bill">billed Annually</p>
+						<button class="pay-btn btn-1">Get started</button>
+					</div>
+
+				</td>
+				<td class="row-1">
+					<div class="plan">
+						<div class="popular-container">
+							<p class="popular-text"><b>Popular</b></p>
+						</div>
+						<h1 class="cost check-2">$25</h1>
+						<p class="month check-2">month</p>
+						<p class="bill">billed Annually</p>
+						<button class="pay-btn btn-2">Get started</button>
+					</div>
+				</td>
+				<td class="row-1">
+					<div class="plan">
+						<div class="popular-container">
+						</div>
+						<h1 class="cost check-3">$50</h1>
+						<p class="month check-3">month</p>
+						<p class="bill">billed Annually</p>
+						<button class="pay-btn btn-3">Get started</button>
+					</div>
+				</td>
+			</tr>
+			<!--content row 2-->
+			<tr>
+				<td class="services">Domain Redirects</td>
+				<td><i class="fa-solid fa-circle-check check-1"></i></td>
+				<td><i class="fa-solid fa-circle-check check-2"></i></td>
+				<td><i class="fa-solid fa-circle-check check-3"></i></td>
+			</tr>
+			<!--content row 3-->
+			<tr>
+				<td class="services">30 days money back</td>
+				<td><i class="fa-solid fa-circle-check check-1"></i></td>
+				<td><i class="fa-solid fa-circle-check check-2"></i></td>
+				<td><i class="fa-solid fa-circle-check check-3"></i></td>
+			</tr>
+			<!--content row 4-->
+			<tr>
+				<td class="services">Free domain transfer</td>
+				<td><i class="fa-solid fa-circle-check check-1"></i></td>
+				<td><i class="fa-solid fa-circle-check check-2"></i></td>
+				<td><i class="fa-solid fa-circle-check check-3"></i></td>
+			</tr>
+			<!--content row 5-->
+			<tr>
+				<td class="services">Free website setup</td>
+				<td><i class="fa-solid fa-circle-check check-1"></i></td>
+				<td><i class="fa-solid fa-circle-check check-2"></i></td>
+				<td><i class="fa-solid fa-circle-check check-3"></i></td>
+			</tr>
+			<!--content row 6-->
+			<tr>
+				<td class="services">Network Firewall</td>
+				<td><i class="fa-solid fa-circle-check check-1"></i></td>
+				<td><i class="fa-solid fa-circle-check check-2"></i></td>
+				<td><i class="fa-solid fa-circle-check check-3"></i></td>
+			</tr>
+		</table>
+	</body
+</html>

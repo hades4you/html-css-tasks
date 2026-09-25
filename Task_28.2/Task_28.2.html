@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Task_28.2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+        }
+
+        body {
+            background-color: #121212;
+            color: white;
+        }
+
+        .main {
+            width: 525px;
+            padding: 20px;
+            margin: 50px auto 0 auto;
+            border-radius: 20px;
+            background-color: #383838;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .duration-container {
+            display: flex;
+            padding: 2px;
+            gap: 5px;
+            border-radius: 5px;
+            background-color: rgb(97, 97, 97);
+        }
+
+        .monthly {
+            background-color: #383838;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+        }
+
+        .yearly-container {
+            display: flex;
+            gap: 10px;
+            padding: 0 10px;
+            align-items: center;
+        }
+
+        .offer {
+            background-color: #383838;
+            color: white;
+            padding: 3px 5px;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+
+        .card-container {
+            margin: 10px 0 0 0;
+        }
+
+        .card {
+            display: flex;
+            border-radius: 10px;
+            border: 1px solid white;
+            padding: 14px;
+            justify-content: space-between;
+        }
+
+        .card-left {
+            display: flex;
+            gap: 5px;
+            align-items: start;
+        }
+
+        .card-circle {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid white;
+        }
+
+        .card-right {
+            text-align: right;
+        }
+
+        .selected-plan {
+            margin: 10px 0;
+            padding: 0 12px;
+            background-color: #0077ff0e;
+            border: 3px solid #0077ff;
+            border-radius: 10px;
+        }
+
+        .selected-card {
+            padding: 14px 0;
+            border: none;
+        }
+
+        .checked-circle-container {
+            border: none;
+            background-color: #0077ff;
+        }
+
+        .checked-circle {
+            width: 10px;
+            height: 10px;
+            margin: 0 auto;
+            background-color: #383838;
+            border-radius: 50%;
+        }
+
+        .table {
+            padding: 5px 0 10px 0;
+            font-size: 18px;
+        }
+
+        .table-icon {
+            color: #0077ff;
+        }
+
+        .table-text {
+            padding: 5px 0 5px 5px;
+        }
+
+        .selected-card-footer {
+            width: 100%;
+            display: flex;
+            padding: 20px 0 10px 0;
+            border-top: 1px solid #a5a5a5;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-footer-left {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .footer-icon-container {
+            font-size: 18px;
+        }
+
+        .card-footer-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #252525;
+            gap: 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .card-footer-sub-text {
+            font-size: 14px;
+        }
+
+        .user,
+        .per-head,
+        .card-footer-sub-text {
+            color: #a5a5a5;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!-- main -->
+    <main class="main">
+        <!-- header -->
+        <header class="header">
+            <!-- title -->
+            <h1 class="title">Select a Plan</h1>
+            <!-- duration container -->
+            <div class="duration-container">
+                <button class="monthly"><b>Monthly</b></button>
+                <div class="yearly-container">
+                    <p class="yearly">Yearly</p>
+                    <button class="offer"><b>20% OFF</b></button>
+                </div>
+            </div>
+        </header>
+        <!-- card container -->
+        <section class="card-container">
+            <!-- card 1 -->
+            <div class="card">
+                <!-- card left area -->
+                <div class="card-left">
+                    <div class="card-circle"></div>
+                    <div class="card-plan-container">
+                        <h2 class="card-plan">Plus</h2>
+                        <p class="user">For Individuals</p>
+                    </div>
+                </div>
+                <!-- card right area -->
+                <div class="card-right">
+                    <h2 class="card-cost">$8.99</h2>
+                    <p class="per-head">User | Month</p>
+                </div>
+            </div>
+            <!-- middle card (selected plan) -->
+            <div class="selected-plan">
+                <!-- card 2 -->
+                <div class="card selected-card">
+                    <!-- card left area -->
+                    <div class="card-left">
+                        <div class="card-circle checked-circle-container">
+                            <div class="checked-circle"></div>
+                        </div>
+                        <div class="card-plan-container">
+                            <h2 class="card-plan">Standard</h2>
+                            <p class="user">For Teams</p>
+                        </div>
+                    </div>
+                    <!-- card right area -->
+                    <div class="card-right">
+                        <h2 class="card-cost">$12.99</h2>
+                        <p class="per-head">User | Month</p>
+                    </div>
+                </div>
+                <!-- selected plan table -->
+                <table class="table">
+                    <tr class="tb-row">
+                        <td class="table-icon"><i class="fa-regular fa-circle-check"></i></td>
+                        <td class="table-text">1TB of Space</td>
+                    </tr>
+                    <tr>
+                        <td class="table-icon"><i class="fa-regular fa-circle-check"></i></td>
+                        <td class="table-text">30 days of File Recovery</td>
+                    </tr>
+                    <tr>
+                        <td class="table-icon"><i class="fa-regular fa-circle-check"></i></td>
+                        <td class="table-text">256-bit AES and SSL/TLS</td>
+                    </tr>
+                </table>
+                <!-- selected plan footer -->
+                <div class="selected-card-footer">
+                    <!-- footer left -->
+                    <div class="card-footer-left">
+                        <div class="footer-icon-container">
+                            <i class="fa-solid fa-user-group"></i>
+                        </div>
+                        <div class="card-footer-text-container">
+                            <p class="card-footer-text"><b>Users</b></p>
+                            <p class="card-footer-sub-text">Starting at 3 users</p>
+                        </div>
+                    </div>
+                    <!-- footer right -->
+                    <div class="card-footer-right">
+                        <p class="card-quantity-operator">-</p>
+                        <p class="card-quantity">3</p>
+                        <p class="card-quantity-operator">+</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card">
+                <!-- card left area -->
+                <div class="card-left">
+                    <div class="card-circle"></div>
+                    <div class="card-plan-container">
+                        <h2 class="card-plan">Advanced</h2>
+                        <p class="user">For Teams</p>
+                    </div>
+                </div>
+                <!-- card right area -->
+                <div class="card-right">
+                    <h2 class="card-cost">$24.99</h2>
+                    <p class="per-head">User | Month</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

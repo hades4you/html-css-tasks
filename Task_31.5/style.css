@@ -1,0 +1,117 @@
+body,div,main,section,footer,h1,h2,h3,p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.main {
+    width: 100%;
+    height: 782px;
+    padding: 50px 150px;
+    color: white;
+    background-color: #121212;
+}
+.home {
+    height: 70%;
+    margin: 0 0 5% 0;
+    display: flex;
+}
+.content-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.content {
+    width: 100%;
+    padding: 0 100px 0 0;
+}
+.title {
+    font-size: 42px;
+}
+.card {
+    display: flex;
+    gap: 15px;
+}
+.top-card {
+    margin: 30px 0;
+}
+.card-icon {
+    font-size: 40px;
+}
+.card-title {
+    color: #2269ff;
+}
+.google-map {
+    width: 50%;
+    border: none;
+    height: 100%;
+}
+.footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    gap: 50px;
+}
+.footer-area {
+    width: 25%;
+    height: 100%;
+}
+.logo-flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.brand-logo {
+    font-size: 30px;
+    color: #2269ff;
+}
+.logo-text {
+    font-size: 20px;
+}
+.social {
+    margin: 20px 0 0 0;
+    display: flex;
+    gap:10px;
+}
+.brand-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    background-color: #2269ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.footer-title {
+    color: #2269ff;
+}
+table,td {
+    border-collapse: collapse;
+    padding: 10px 0;
+}
+.table-detail {
+    padding: 10px 10px;
+}
+.footer-btn-container {
+    margin: 20px 0 0 0;
+}
+.top-btn {
+    color: #2269ff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+.bottom-btn {
+    background-color: #2269ff;
+    color: white;
+    margin: 10px 0 0 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px 0 20px 20px;
+    border: none;
+}

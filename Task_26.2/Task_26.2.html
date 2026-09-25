@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task_26.2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            border: none;
+            outline: none;
+        }
+        body {
+            background-color: #121212;
+            color: #d3d3d3;
+        }
+        .card {
+            margin: 50px auto 0 auto;
+            width: 450px;
+            border-radius: 20px 20px 50px 50px;
+            background-color: #d9af75;
+        }
+        .img-container {
+            width: 100%;
+            display: flex;
+            padding: 30px 0;
+            justify-content: center;
+            align-items: center;
+        }
+        .burger-img {
+            width: 65%;
+        }
+        .content-container {
+            width: 100%;
+            background-color: #3d3d3d;
+            padding: 40px 20px;
+            border-radius: 50px 50px 20px 20px;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .fav-icon-container {
+            background-color: #1f1f1f;
+            color: #ff4747;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+        .rating-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+        }
+        .rating-img {
+            width: 30%;
+            padding: 3px;
+            background-color: #ffe1002a;
+        }
+        .desc {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .button-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .quantity,.cart {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 22px;
+            gap: 20px;
+            padding: 15px 30px;
+            color: #141414;
+            border-radius: 5px;
+            border: 2px solid #ff4747;
+            color: #ff4747;
+            background-color: #303030;
+        }
+        .quantity-val {
+            color: #d3d3d3;
+        }
+        .cart {
+            background-color: #ff4747;
+            color: #fafafa;
+            padding: 15px 70px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <main class="card">
+        <figure class="img-container">
+            <img class="burger-img" src="./burger.png" alt="burger"/>
+        </figure>
+        <section class="content-container">
+            <header class="header">
+                <h2 class="name">Chicken Zinger Burger - Classic</h2>
+                <div class="fav-icon-container">
+                    <i class="fa-regular fa-heart fav-icon"></i>
+                </div>
+            </header>
+            <div class="rating-container">
+                <img class="rating-img" src="./4-stars.png" alt="4-stars"/>
+                <p>245 ratings</p>
+            </div>
+            <p class="desc">Signature chicken burger made with a crunchy chicken fillet, veggies & a delicious mayo sauce</p>
+            <div class="button-container">
+                <div class="quantity">
+                    <p class="quantity-minus">-</p>
+                    <p class="quantity-val">1</p>
+                    <p class="quantity-plus">+</p>
+                </div>
+                <div>
+                    <p class="cart">Add item $5</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

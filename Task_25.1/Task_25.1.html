@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Task_25.1</title>
+		<style>
+			* {
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+				border:none;
+				outline:none;
+			}
+			body {
+				background-color:#121212;
+				color:#EEEEEE;
+			}
+			.strip {
+				display:flex;
+			}
+			main {
+				margin:30px auto 0 auto;
+				padding:20px 0 0 0;
+				width:900px;
+				background-color:#1B1B1B;
+			}
+			.image,.card {
+				width:300px;
+				height:300px;
+				background-color:#262626;
+			}
+			.title {
+				text-align:center;
+				margin:0 0 15px 0;
+				font-size:35px;
+			}
+			.line {
+				width:200px;
+				height:1px;
+				background-color:#EEEEEE;
+				margin:0 auto 15px auto;
+			}
+			.card {
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				text-align:center;
+			}
+			.card-inner {
+				padding:0 50px;
+			}
+			.card-desc {
+				margin:10px 0 15px 0;
+			}
+			.mention {
+				margin:0 0 15px 0;
+			}
+			.learn {
+				padding:8px 20px;
+				color:#EEEEEE;
+				border:1px solid #EEEEEE;
+				background-color:#1B1B1B;
+			}
+			.underline {
+				border-bottom:1px solid #EEEEEE;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- main -->
+		<main>
+			<h1 class="title">The Aanlog Era</h1>
+			<div class="line"></div>
+			<section class="container">
+				<div class="strip">
+					<img src="./vinyl-sq.jpg" alt="vinyl" class="image"/>
+					<div class="card">
+						<div class="card-inner">
+							<h3 class="card-header">CASSETTE</h3>
+							<p class="card-desc">Portable music made personal, from carefully made mixtapes to the unmistakable click of a tape being rewound.</p>
+							<p class="mention">Image from <span class="underline">pexels</span></p>
+							<button class="learn">LEARN MORE</button>
+						</div>
+					</div>
+					<img src="./camera.jpg" alt="camera" class="image"/>
+				</div>
+				<div class="strip">
+					<div class="card">
+						<div class="card-inner">
+							<h3 class="card-header">VINYL</h3>
+							<p class="card-desc">A timeless way to experience music, where every record carries its own sound, artwork, and story.</p>
+							<p class="mention">Image from <span class="underline">pexels</span></p>
+							<button class="learn">LEARN MORE</button>
+						</div>
+					</div>
+					<img src="./tape-sq.jpg" alt="tape" class="image"/>
+					<div class="card">
+						<div class="card-inner">
+							<h3 class="card-header">FILM</h3>
+							<p class="card-desc">Before pixels, every frame was precious. A slower, more deliberate way of capturing a moment.</p>
+							<p class="mention">Image from <span class="underline">pexels</span></p>
+							<button class="learn">LEARN MORE</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

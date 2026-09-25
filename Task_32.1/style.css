@@ -1,0 +1,81 @@
+.card-container {
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.card-container h1,p {
+    margin: 0;
+}
+.card-container div {
+    box-sizing: border-box;
+}
+.card-1 {
+    width: 25%;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #2a47a5;
+}
+.card-1 h1 {
+    color: #ffd166;
+}
+.card-1 p {
+    color: #12db00;
+}
+.card-1 img {
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border: 2px dashed black;
+    border-radius: 50%;
+}
+.card-2 {
+    width: 25%;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #a56c2a;
+}
+.card-2 h1 {
+    color: #000ed6;
+}
+.card-2 p {
+    color: #ffd0d0;
+}
+.card-2 img {
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border: 2px dashed black;
+    border-radius: 50%;
+}
+.card-3 {
+    width: 25%;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #2aa586;
+}
+.card-3 h1 {
+    color: #460000;
+}
+.card-3 p {
+    color: #001b64;
+}
+.card-3 img {
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border: 2px dashed black;
+    border-radius: 50%;
+}
