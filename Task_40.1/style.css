@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.page {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.page {
+  width: 100%;
+  min-height: 782px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #242424;
+}
+.card-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  width: 250px;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #171717;
+  box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.1);
+}
+.card > img {
+  width: 80%;
+  border-radius: 50%;
+}
+.card > p {
+  line-height: 28px;
+}
+.social {
+  font-size: 8px;
+}
+.social i {
+  font-size: 20px;
+}
+.social span {
+  padding: 3px;
+}
+@media screen and (min-width: 950px) and (max-width: 1220px) {
+  .card {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 950px) {
+  .card {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 720px) {
+  .card {
+    width: 250px;
+  }
+  .card > img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-container {
+    width: 80%;
+  }
+  .card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 600px) {
+  .card > img {
+    width: 60%;
+  }
+}

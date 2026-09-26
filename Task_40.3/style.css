@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.page,
+button {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.page {
+  width: 100%;
+  min-height: 782px;
+  padding: 30px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #171717;
+}
+.page-header {
+  padding: 0 0 30px;
+  text-align: center;
+}
+.page-header > h1 {
+  font-size: 52px;
+  text-decoration: underline 2px;
+  text-shadow: 0 0 3px;
+}
+.page-header {
+  color: #777777;
+}
+.card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card {
+  min-width: 275px;
+  border-radius: 5px;
+  background-color: #121212;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.07);
+}
+.top-container {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.top-container-sheet {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  background-color: #121212f5;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+.top-padding {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.discount {
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 2px;
+  background-color: #f51b1b;
+}
+.bookmark-container {
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 2px;
+}
+.img-container {
+  width: 70%;
+  display: grid;
+  justify-self: center;
+}
+.cover-art {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 8px rgba(255, 255, 255, 0.07);
+}
+.details-container {
+  padding: 30px 20px;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 15px;
+}
+.name-container {
+  width: 100%;
+  height: 70px;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: start;
+}
+.category-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+.category-container > button {
+  padding: 2px 8px;
+  border-radius: 2px;
+  background-color: #272727;
+  color: #888888;
+}
+.category-circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ffffff71;
+}
+.rating-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  color: rgb(85, 85, 85);
+}
+.rating-container > i {
+  color: gold;
+  text-shadow: 0px 0px 3px;
+}
+.cost > span {
+  margin: 0 0 0 10px;
+  font-size: 12px;
+  color: #777777;
+  text-decoration: line-through 1.5px rgb(158, 158, 158);
+}
+.buy {
+  padding: 10px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  color: #242424;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.07);
+}
+.card-1 {
+  border: 1px solid #046990;
+}
+.card-1 .top-container {
+  background-image: url("./cover-arts/need-for-speed.jpg");
+}
+.card-1 .bookmark-container {
+  border: 2px solid #046990;
+  color: #046990;
+}
+.card-1 .buy {
+  background-color: #046990;
+}
+.card-2 {
+  border: 1px solid #eeeeed;
+}
+.card-2 .top-container {
+  background-image: url("./cover-arts/assassins-creed.jpg");
+}
+.card-2 .bookmark-container {
+  border: 2px solid #eeeeed;
+  color: #eeeeed;
+}
+.card-2 .buy {
+  background-color: #eeeeed;
+}
+.card-3 {
+  border: 1px solid #ceae35;
+}
+.card-3 .top-container {
+  background-image: url("./cover-arts/gta.jpg");
+}
+.card-3 .bookmark-container {
+  border: 2px solid #ceae35;
+  color: #ceae35;
+}
+.card-3 .buy {
+  background-color: #ceae35;
+}
+.card-4 {
+  border: 1px solid #c4231b;
+}
+.card-4 .top-container {
+  background-image: url("./cover-arts/farcry.jpg");
+}
+.card-4 .bookmark-container {
+  border: 2px solid #c4231b;
+  color: #c4231b;
+}
+.card-4 .buy {
+  background-color: #c4231b;
+}
+.card-5 {
+  border: 1px solid #8aa62d;
+}
+.card-5 .top-container {
+  background-image: url("./cover-arts/halo.jpg");
+}
+.card-5 .bookmark-container {
+  border: 2px solid #8aa62d;
+  color: #8aa62d;
+}
+.card-5 .buy {
+  background-color: #8aa62d;
+}
+.card-6 {
+  border: 1px solid #302dc3;
+}
+.card-6 .top-container {
+  background-image: url("./cover-arts/resident-evil-6.jpg");
+}
+.card-6 .bookmark-container {
+  border: 2px solid #302dc3;
+  color: #302dc3;
+}
+.card-6 .buy {
+  background-color: #302dc3;
+}
+.card-7 {
+  border: 1px solid #066ca8;
+}
+.card-7 .top-container {
+  background-image: url("./cover-arts/warframe.jpg");
+}
+.card-7 .bookmark-container {
+  border: 2px solid #066ca8;
+  color: #066ca8;
+}
+.card-7 .buy {
+  background-color: #066ca8;
+}
+.card-8 {
+  border: 1px solid #67d41d;
+}
+.card-8 .top-container {
+  background-image: url("./cover-arts/minecraft.jpg");
+}
+.card-8 .bookmark-container {
+  border: 2px solid #67d41d;
+  color: #67d41d;
+}
+.card-8 .buy {
+  background-color: #67d41d;
+}
+.card-9 {
+  border: 1px solid #c3020e;
+}
+.card-9 .top-container {
+  background-image: url("./cover-arts/red-dead-redemption-2.jpg");
+}
+.card-9 .bookmark-container {
+  border: 2px solid #c3020e;
+  color: #c3020e;
+}
+.card-9 .buy {
+  background-color: #c3020e;
+}
+.card-10 {
+  border: 1px solid #fef900;
+}
+.card-10 .top-container {
+  background-image: url("./cover-arts/cyberpunk.jpg");
+}
+.card-10 .bookmark-container {
+  border: 2px solid #fef900;
+  color: #fef900;
+}
+.card-10 .buy {
+  background-color: #fef900;
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .card-container {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page-header > h1 {
+    font-size: 40px;
+  }
+  .card-container {
+    grid-template-columns: auto;
+  }
+}
