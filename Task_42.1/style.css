@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.page {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.page {
+  width: 100%;
+  min-height: 782px;
+  display: grid;
+  color: white;
+  grid-template-areas:
+    "header menu menu menu"
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "main main image image"
+    "main main image image"
+    "main main extra extra"
+    "main main extra extra"
+    "banner banner banner banner";
+  background-color: #242424;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  grid-area: header;
+  background-color: #161616;
+}
+.menu {
+  grid-area: menu;
+  background-color: #ff2323;
+}
+.hero {
+  grid-area: hero;
+  background-color: #2d74df;
+}
+.main {
+  grid-area: main;
+  background-color: #0d264b;
+}
+.image {
+  grid-area: image;
+  background-color: #90c7f3;
+}
+.extra {
+  grid-area: extra;
+  background-color: #3f815a;
+}
+.banner {
+  grid-area: banner;
+  background-color: #ece034;
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .page {
+    grid-template-areas:
+      "header header header header"
+      "hero hero hero hero"
+      "hero hero hero hero"
+      "hero hero hero hero"
+      "hero hero hero hero"
+      "hero hero hero hero"
+      "menu main main main"
+      "menu main main main"
+      "menu main main main"
+      "menu main main main"
+      "menu main main main"
+      "menu banner banner banner"
+      "menu banner banner banner"
+      "menu extra extra image"
+      "menu extra extra image";
+  }
+}
+@media screen and (max-width: 600px) {
+  .page {
+    grid-template-areas:
+      "header"
+      "menu"
+      "hero"
+      "hero"
+      "hero"
+      "hero"
+      "hero"
+      "main"
+      "main"
+      "main"
+      "main"
+      "main"
+      "banner"
+      "banner"
+      "banner"
+      "extra"
+      "extra"
+      "extra"
+      "image"
+      "image"
+      "image";
+  }
+}

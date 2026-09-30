@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.page {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.page {
+  width: 100%;
+  min-height: 782px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  background-color: #242424;
+}
+.card {
+  min-height: 400px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #717171;
+}
+.card-top {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.card-img {
+  width: 250px;
+  align-self: center;
+}
+.card-title {
+  padding: 0 50px 0 0;
+}
+.card-views {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-1 {
+  grid-column: 1 / span 3;
+  background-image: url("./finance-pack/lighthouse.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top center;
+  background-color: #2672ff;
+}
+.card-2 {
+  background-color: #26ffdb;
+}
+.card-3 {
+  background-color: #ff8f26;
+}
+.card-4 {
+  background-color: #a826ff;
+}
+.card-5 {
+  background-color: #ff2626;
+}
+.card-6 {
+  grid-column: 2 / span 2;
+  background-color: #fff126;
+}
+.card-7 {
+  grid-column: 1 / span 2;
+  background-color: #26afff;
+}
+.card-8 {
+  background-color: #ff26d0;
+}
+.card-6 .card-top,
+.card-7 .card-top {
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  .page {
+    grid-template-columns: auto auto;
+  }
+  .card-1 {
+    background-size: 70%;
+  }
+  .card-1,
+  .card-6,
+  .card-7 {
+    grid-column: 1 / span 2;
+  }
+  .card-img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page {
+    grid-template-columns: auto;
+  }
+  .card-1 {
+    background-size: cover;
+  }
+  .card-1,
+  .card-6,
+  .card-7 {
+    grid-column: 1 / span 1;
+  }
+  .card-6 .card-top,
+  .card-7 .card-top {
+    flex-direction: column;
+  }
+  .card-title {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card-img {
+    width: 150px;
+  }
+}

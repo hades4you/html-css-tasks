@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.page {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.page {
+  width: 100%;
+  min-height: 782px;
+  display: grid;
+  grid-template-areas:
+    "card-1 card-2 card-3 card-4"
+    "card-5 card-6 card-6 card-7"
+    "card-5 card-8 card-9 card-7";
+  color: white;
+  background-color: #242424;
+}
+.card {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-1 {
+  grid-area: card-1;
+}
+.card-2 {
+  grid-area: card-2;
+}
+.card-3 {
+  grid-area: card-3;
+}
+.card-4 {
+  grid-area: card-4;
+}
+.card-5 {
+  grid-area: card-5;
+}
+.card-6 {
+  grid-area: card-6;
+}
+.card-7 {
+  grid-area: card-7;
+}
+.card-8 {
+  grid-area: card-8;
+}
+.card-9 {
+  grid-area: card-9;
+}
+.type-1 {
+  background-color: #242424;
+}
+.type-2 {
+  background-color: #1e6cfd;
+}
+.type-3 {
+  background-color: #31f020;
+}
+.type-4 {
+  background-color: #353535;
+}
+@media screen and (max-width: 900px) {
+  .page {
+    grid-template-areas:
+      "card-1 card-4"
+      "card-2 card-3"
+      "card-6 card-6"
+      "card-5 card-7"
+      "card-8 card-9";
+  }
+}
+@media screen and (max-width: 600px) {
+  .page {
+    grid-template-areas:
+      "card-1"
+      "card-2"
+      "card-3"
+      "card-4"
+      "card-5"
+      "card-6"
+      "card-7"
+      "card-8"
+      "card-9";
+  }
+}
