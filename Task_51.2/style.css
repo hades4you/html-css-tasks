@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.page {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #212121;
+}
+.page > h1 {
+  font-size: 50px;
+}
+.home {
+  width: 90%;
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+.hero-img-container {
+  width: 50%;
+  aspect-ratio: 1/1;
+}
+.hero-img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.content-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.content-top {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 0.7;
+}
+.rectangle-frame {
+  width: 45%;
+  height: 100%;
+  border: 15px solid #bb0518;
+}
+.content-top-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+.content-top-text > div,
+.content-top-text > p:last-child > span {
+  background-color: #212121;
+}
+.content-top-text > div > h2 {
+  padding: 20px 0 10px 0;
+}
+.content-top-text > div > p:nth-child(2) {
+  padding: 10px 0 20px 0;
+}
+.content-top-text > p:last-child > span {
+  padding: 0 0 2px 0;
+  border-bottom: 1px solid white;
+}
+.content-bottom {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #181818;
+}
+.box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square-box {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(45deg);
+  background-color: #181818;
+}
+.box > h1 {
+  font-size: 100px;
+  font-weight: 400;
+  color: #bb05184b;
+}
+.box > p {
+  position: absolute;
+  color: #bb0518;
+}
+@media screen and (max-width: 1000px) {
+  .home {
+    flex-direction: column;
+  }
+  .hero-img-container,
+  .content-section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page {
+    padding: 10px;
+  }
+  .content-top {
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 1 / 1.5;
+  }
+  .rectangle-frame {
+    width: 60%;
+  }
+  .content-top-text {
+    text-align: center;
+    width: 100%;
+  }
+  .content-bottom {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 350px) {
+  .content-top {
+    aspect-ratio: 1 / 2;
+  }
+}

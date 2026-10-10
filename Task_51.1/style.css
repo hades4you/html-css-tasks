@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.page {
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  background-color: #121212;
+}
+.ball {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+.ball-dupe-1 {
+  animation-delay: 25ms;
+  filter: opacity(0.2);
+}
+.ball-dupe-2 {
+  animation-delay: 50ms;
+  filter: opacity(0.1);
+}
+.ball-1 {
+  top: 0;
+  left: 0;
+  animation-name: ball-1;
+  animation-timing-function: ease;
+  background-color: #1376f8;
+}
+@keyframes ball-1 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    top: 0;
+    left: 100%;
+    transform: translate(-100%, 0);
+  }
+}
+.ball-2 {
+  top: 110px;
+  left: 0;
+  animation-name: ball-2;
+  animation-timing-function: linear;
+  background-color: #13f826;
+}
+@keyframes ball-2 {
+  0% {
+    top: 110px;
+    left: 0;
+  }
+  50% {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    top: 110px;
+    left: 100%;
+    transform: translate(-100%, 0);
+  }
+}
+.ball-3 {
+  top: 220px;
+  left: 0;
+  animation-name: ball-3;
+  animation-timing-function: ease-in;
+  background-color: #f4f813;
+}
+@keyframes ball-3 {
+  0% {
+    top: 220px;
+    left: 0;
+  }
+  50% {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    top: 220px;
+    left: 100%;
+    transform: translate(-100%, 0);
+  }
+}
+.ball-4 {
+  top: 330px;
+  left: 0;
+  animation-name: ball-4;
+  animation-timing-function: ease-out;
+  background-color: #f81313;
+}
+@keyframes ball-4 {
+  0% {
+    top: 330px;
+    left: 0;
+  }
+  50% {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    top: 330px;
+    left: 100%;
+    transform: translate(-100%, 0);
+  }
+}
+.ball-5 {
+  top: 440px;
+  left: 0;
+  animation-name: ball-5;
+  animation-timing-function: ease-in-out;
+  background-color: #7613f8;
+}
+@keyframes ball-5 {
+  0% {
+    top: 440px;
+    left: 0;
+  }
+  50% {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    top: 440px;
+    left: 100%;
+    transform: translate(-100%, 0);
+  }
+}
