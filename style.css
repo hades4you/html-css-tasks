@@ -89,6 +89,9 @@
 }
 .preview {
   width: 100%;
+  aspect-ratio: 12 / 6;
+  object-fit: cover;
+  object-position: center;
   border-radius: 5px;
   box-shadow: rgba(138, 138, 138, 0.2) 0px 2px 8px 0px;
 }
