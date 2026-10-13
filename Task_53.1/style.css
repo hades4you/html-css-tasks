@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.page {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.page {
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  background-color: #242424;
+}
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+  background-color: #313131;
+}
+.logo {
+  position: relative;
+  animation: logo 0.5s forwards;
+}
+@keyframes logo {
+  from {
+    bottom: 100%;
+  }
+  to {
+    bottom: 0;
+  }
+}
+.navlinks {
+  position: relative;
+  display: flex;
+  gap: 50px;
+  animation: navlinks 0.5s forwards;
+}
+@keyframes navlinks {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+.navlinks > a {
+  text-decoration: none;
+  color: white;
+}
+.home {
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 100px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.article {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.article > h1 {
+  font-size: 3rem;
+}
+.article > p {
+  font-size: 1.2rem;
+  line-height: 2.4;
+}
+.article-1 {
+  animation: article-1 0.5s 0.5s forwards;
+  right: 110%;
+}
+.article-2 {
+  animation: article-2 0.5s 0.5s forwards;
+  left: 110%;
+}
+@keyframes article-1 {
+  from {
+    right: 110%;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes article-2 {
+  from {
+    left: 110%;
+  }
+  to {
+    left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navlinks {
+    display: none;
+  }
+}
